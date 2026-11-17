@@ -1,0 +1,18 @@
+# Secrets
+.satnogs_token
+.env
+
+# Python / OS clutter
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# Runtime output of the live software (re-created by run_all.py)
+state/data/
+state/images/
+
+# Raw satellite images (2.8 GB) are distributed separately, not in git
+data/archive/raw/
+data/archive/archive.db-shm
+data/archive/archive.db-wal

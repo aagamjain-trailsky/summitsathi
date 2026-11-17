@@ -1,0 +1,24 @@
+~/trailsky/venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+[GEO] 499218: best r=0.10 at offset 28s (r at 0s = -0.02) station 440
+[GEO] 538426: best r=0.05 at offset -8s (r at 0s = -0.00) station 440
+[GEO] 570044: best r=0.05 at offset 28s (r at 0s = -0.03) station 440
+[GEO] 1450905: best r=0.06 at offset -2s (r at 0s = 0.06) station 893
+[GEO] 4220970: best r=0.09 at offset 6s (r at 0s = 0.03) station 440
+[GEO] 669001: best r=0.08 at offset 4s (r at 0s = 0.01) station 440
+[GEO] 12120715: best r=0.18 at offset 12s (r at 0s = 0.04) station 4254
+[GEO] 484394: best r=0.06 at offset -8s (r at 0s = -0.01) station 440
+[GEO] 518939: best r=0.02 at offset 20s (r at 0s = -0.02) station 440
+[GEO] 643769: best r=0.10 at offset 2s (r at 0s = 0.09) station 440
+[GEO] 432515: best r=0.05 at offset 20s (r at 0s = 0.02) station 440
+[GEO] 638411: best r=0.03 at offset 20s (r at 0s = -0.01) station 440
+[GEO] 687194: best r=0.04 at offset 2s (r at 0s = 0.04) station 440
+[GEO] 623261: best r=0.07 at offset 30s (r at 0s = 0.02) station 440
+[GEO] 669002: best r=0.10 at offset 0s (r at 0s = 0.10) station 440
+[GEO] 484398: best r=0.02 at offset 4s (r at 0s = -0.04) station 440
+[GEO] 645755: best r=0.18 at offset -2s (r at 0s = 0.14) station 440
+[GEO] 598706: best r=0.09 at offset -8s (r at 0s = -0.02) station 440
+[GEO] 592785: best r=0.14 at offset 0s (r at 0s = 0.14) station 440
+[GEO] 626585: best r=0.05 at offset -2s (r at 0s = 0.04) station 440
+
+[GEO] Summary: {'passes': 20, 'strong_matches': 2, 'median_offset_s': 5.0, 'per_station': {440: {'passes': 18, 'strong': 1, 'offsets': [-2], 'median_offset_s': -2.0}, 893: {'passes': 1, 'strong': 0, 'offsets': [], 'median_offset_s': None}, 4254: {'passes': 1, 'strong': 1, 'offsets': [12], 'median_offset_s': 12.0}}}

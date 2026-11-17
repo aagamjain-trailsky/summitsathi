@@ -1,0 +1,199 @@
+{
+ "definition": "Calibrated probability (\u00d7100) of a thunderstorm now, rain within 3 h, or fog, reported at the location",
+ "test_n": 7788,
+ "hazard_rate_pct": 11.569080636877246,
+ "auc": 0.8800703347054649,
+ "auc_without_safety_rules": 0.8823258670528382,
+ "brier": 0.07424535258172854,
+ "brier_climatology": 0.08607040160997817,
+ "brier_skill_vs_climatology": 0.13738810098544663,
+ "reliability": [
+  {
+   "bin": "0\u201310",
+   "n": 5553,
+   "mean_score": 1.6552242525801273,
+   "observed_rate_pct": 2.827300558256798
+  },
+  {
+   "bin": "10\u201320",
+   "n": 999,
+   "mean_score": 13.455905701631,
+   "observed_rate_pct": 15.915915915915916
+  },
+  {
+   "bin": "20\u201330",
+   "n": 440,
+   "mean_score": 27.23955845032262,
+   "observed_rate_pct": 39.09090909090909
+  },
+  {
+   "bin": "30\u201340",
+   "n": 59,
+   "mean_score": 32.56049951676785,
+   "observed_rate_pct": 32.20338983050847
+  },
+  {
+   "bin": "40\u201350",
+   "n": 287,
+   "mean_score": 47.43554006968641,
+   "observed_rate_pct": 34.84320557491289
+  },
+  {
+   "bin": "50\u201360",
+   "n": 287,
+   "mean_score": 56.649253196574705,
+   "observed_rate_pct": 62.02090592334495
+  },
+  {
+   "bin": "60\u201370",
+   "n": 12,
+   "mean_score": 65.99202603684644,
+   "observed_rate_pct": 50.0
+  },
+  {
+   "bin": "70\u201380",
+   "n": 45,
+   "mean_score": 73.92663058158979,
+   "observed_rate_pct": 64.44444444444444
+  },
+  {
+   "bin": "80\u201390",
+   "n": 56,
+   "mean_score": 80.3094275622843,
+   "observed_rate_pct": 69.64285714285714
+  },
+  {
+   "bin": "90\u2013100",
+   "n": 50,
+   "mean_score": 99.70988841846197,
+   "observed_rate_pct": 84.0
+  }
+ ],
+ "bands": [
+  {
+   "band": "MINIMAL",
+   "score_range": "0\u201310",
+   "n": 5553,
+   "share_of_cases_pct": 71.3020030816641,
+   "observed_hazard_rate_pct": 2.827300558256798,
+   "decision": "Conditions favourable \u2014 keep checking each pass"
+  },
+  {
+   "band": "LOW",
+   "score_range": "10\u201325",
+   "n": 1092,
+   "share_of_cases_pct": 14.021571648690292,
+   "observed_hazard_rate_pct": 17.94871794871795,
+   "decision": "Low risk \u2014 monitor conditions"
+  },
+  {
+   "band": "MODERATE",
+   "score_range": "25\u201345",
+   "n": 406,
+   "share_of_cases_pct": 5.213148433487417,
+   "observed_hazard_rate_pct": 37.93103448275862,
+   "decision": "Proceed with caution \u2014 set a turn-around time"
+  },
+  {
+   "band": "HIGH",
+   "score_range": "45\u201370",
+   "n": 586,
+   "share_of_cases_pct": 7.524396507447355,
+   "observed_hazard_rate_pct": 48.4641638225256,
+   "decision": "High risk \u2014 avoid exposed ridges; consider turning back"
+  },
+  {
+   "band": "EXTREME",
+   "score_range": "70\u2013100",
+   "n": 151,
+   "share_of_cases_pct": 1.9388803287108372,
+   "observed_hazard_rate_pct": 72.84768211920529,
+   "decision": "Do not climb \u2014 hazardous weather likely"
+  }
+ ],
+ "safety_rules": {
+  "storm_within_20km": {
+   "test_n": 437,
+   "test_hazard_rate_pct": 54.46224256292906,
+   "times_applied": 203
+  },
+  "overshooting_top_within_50km": {
+   "test_n": 500,
+   "test_hazard_rate_pct": 55.60000000000001,
+   "times_applied": 233
+  }
+ },
+ "folds": [
+  {
+   "test_years": [
+    2018,
+    2019
+   ],
+   "n": 2860,
+   "settings": {
+    "max_depth": 3,
+    "learning_rate": 0.05,
+    "class_weight": null
+   },
+   "floors": {
+    "storm_within_20km": {
+     "floor_score": 45,
+     "tune_n": 64
+    },
+    "overshooting_top_within_50km": {
+     "floor_score": 48,
+     "tune_n": 87
+    }
+   },
+   "auc": 0.8869370788768681
+  },
+  {
+   "test_years": [
+    2021
+   ],
+   "n": 4559,
+   "settings": {
+    "max_depth": 3,
+    "learning_rate": 0.1,
+    "class_weight": null
+   },
+   "floors": {
+    "storm_within_20km": {
+     "floor_score": 45,
+     "tune_n": 64
+    },
+    "overshooting_top_within_50km": {
+     "floor_score": 48,
+     "tune_n": 87
+    }
+   },
+   "auc": 0.8722190339550454
+  },
+  {
+   "test_years": [
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "n": 369,
+   "settings": {
+    "max_depth": 3,
+    "learning_rate": 0.05,
+    "class_weight": null
+   },
+   "floors": {
+    "storm_within_20km": {
+     "floor_score": 45,
+     "tune_n": 64
+    },
+    "overshooting_top_within_50km": {
+     "floor_score": 48,
+     "tune_n": 87
+    }
+   },
+   "auc": 0.752584731256419
+  }
+ ],
+ "stale_after_hours": 3.0
+}

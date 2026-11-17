@@ -1,0 +1,547 @@
+{
+ "summary": {
+  "passes": 60,
+  "strong_matches": 6,
+  "median_offset_s": 8.0,
+  "per_station": {
+   "440": {
+    "passes": 47,
+    "strong": 5,
+    "offsets": [
+     6,
+     8,
+     4,
+     8,
+     8
+    ],
+    "median_offset_s": 8.0
+   },
+   "893": {
+    "passes": 1,
+    "strong": 0,
+    "offsets": [],
+    "median_offset_s": null
+   },
+   "1857": {
+    "passes": 3,
+    "strong": 0,
+    "offsets": [],
+    "median_offset_s": null
+   },
+   "1874": {
+    "passes": 1,
+    "strong": 0,
+    "offsets": [],
+    "median_offset_s": null
+   },
+   "2011": {
+    "passes": 2,
+    "strong": 0,
+    "offsets": [],
+    "median_offset_s": null
+   },
+   "2957": {
+    "passes": 2,
+    "strong": 0,
+    "offsets": [],
+    "median_offset_s": null
+   },
+   "3413": {
+    "passes": 3,
+    "strong": 0,
+    "offsets": [],
+    "median_offset_s": null
+   },
+   "4254": {
+    "passes": 1,
+    "strong": 1,
+    "offsets": [
+     12
+    ],
+    "median_offset_s": 12.0
+   }
+  }
+ },
+ "passes": [
+  {
+   "obs_id": 499218,
+   "station_id": 440,
+   "best_corr": 0.09887211918145565,
+   "best_offset": 28,
+   "best_mirror": false,
+   "corr_at_zero": -0.017533524149697992
+  },
+  {
+   "obs_id": 538426,
+   "station_id": 440,
+   "best_corr": 0.04635220360219401,
+   "best_offset": -8,
+   "best_mirror": false,
+   "corr_at_zero": -0.004260040205612493
+  },
+  {
+   "obs_id": 570044,
+   "station_id": 440,
+   "best_corr": 0.05010825059557494,
+   "best_offset": 28,
+   "best_mirror": false,
+   "corr_at_zero": -0.034107011203829675
+  },
+  {
+   "obs_id": 1450905,
+   "station_id": 893,
+   "best_corr": 0.06184285081877004,
+   "best_offset": -2,
+   "best_mirror": false,
+   "corr_at_zero": 0.056453916434172524
+  },
+  {
+   "obs_id": 3771771,
+   "station_id": 440,
+   "best_corr": 0.0332267122478996,
+   "best_offset": 18,
+   "best_mirror": false,
+   "corr_at_zero": -0.00045629852194683493
+  },
+  {
+   "obs_id": 9045369,
+   "station_id": 3413,
+   "best_corr": 0.12417880839173767,
+   "best_offset": 2,
+   "best_mirror": false,
+   "corr_at_zero": 0.08459111353582084
+  },
+  {
+   "obs_id": 687196,
+   "station_id": 440,
+   "best_corr": 0.12733354255239016,
+   "best_offset": 2,
+   "best_mirror": false,
+   "corr_at_zero": 0.07851009370257951
+  },
+  {
+   "obs_id": 3470567,
+   "station_id": 440,
+   "best_corr": 0.08044631295161996,
+   "best_offset": 24,
+   "best_mirror": false,
+   "corr_at_zero": 0.011216786423859877
+  },
+  {
+   "obs_id": 4005302,
+   "station_id": 440,
+   "best_corr": 0.06724541527192542,
+   "best_offset": 16,
+   "best_mirror": false,
+   "corr_at_zero": 0.01008996975611824
+  },
+  {
+   "obs_id": 4096246,
+   "station_id": 440,
+   "best_corr": 0.21833161511679217,
+   "best_offset": 6,
+   "best_mirror": false,
+   "corr_at_zero": -0.008209157585477102
+  },
+  {
+   "obs_id": 3869996,
+   "station_id": 440,
+   "best_corr": 0.10724359453851205,
+   "best_offset": 6,
+   "best_mirror": false,
+   "corr_at_zero": 0.015351098614876024
+  },
+  {
+   "obs_id": 4220970,
+   "station_id": 440,
+   "best_corr": 0.08796884907149771,
+   "best_offset": 6,
+   "best_mirror": false,
+   "corr_at_zero": 0.031862266454918825
+  },
+  {
+   "obs_id": 3646515,
+   "station_id": 440,
+   "best_corr": 0.053020680682105956,
+   "best_offset": 16,
+   "best_mirror": false,
+   "corr_at_zero": 0.0039890715894603775
+  },
+  {
+   "obs_id": 3686302,
+   "station_id": 440,
+   "best_corr": 0.03336190911735211,
+   "best_offset": 6,
+   "best_mirror": false,
+   "corr_at_zero": -0.014928903499106734
+  },
+  {
+   "obs_id": 9181385,
+   "station_id": 3413,
+   "best_corr": 0.06488037681194098,
+   "best_offset": 4,
+   "best_mirror": false,
+   "corr_at_zero": 0.015481406077528246
+  },
+  {
+   "obs_id": 3916394,
+   "station_id": 440,
+   "best_corr": 0.0601435302297818,
+   "best_offset": 6,
+   "best_mirror": false,
+   "corr_at_zero": -0.040145239905164366
+  },
+  {
+   "obs_id": 4181853,
+   "station_id": 440,
+   "best_corr": 0.1627560918127111,
+   "best_offset": 8,
+   "best_mirror": false,
+   "corr_at_zero": -0.048714243960276765
+  },
+  {
+   "obs_id": 3963536,
+   "station_id": 440,
+   "best_corr": 0.02598543482078114,
+   "best_offset": 26,
+   "best_mirror": false,
+   "corr_at_zero": -0.021004125847055112
+  },
+  {
+   "obs_id": 3149083,
+   "station_id": 1857,
+   "best_corr": 0.07986685934774568,
+   "best_offset": 30,
+   "best_mirror": false,
+   "corr_at_zero": -0.031336999443675635
+  },
+  {
+   "obs_id": 3611044,
+   "station_id": 440,
+   "best_corr": 0.02469606221037489,
+   "best_offset": 28,
+   "best_mirror": false,
+   "corr_at_zero": -0.011895823828287766
+  },
+  {
+   "obs_id": 4137481,
+   "station_id": 440,
+   "best_corr": 0.07977165804190396,
+   "best_offset": 6,
+   "best_mirror": false,
+   "corr_at_zero": -0.05812636576194746
+  },
+  {
+   "obs_id": 669001,
+   "station_id": 440,
+   "best_corr": 0.07535916730300435,
+   "best_offset": 4,
+   "best_mirror": false,
+   "corr_at_zero": 0.008699474529198298
+  },
+  {
+   "obs_id": 716291,
+   "station_id": 440,
+   "best_corr": 0.18184737168079845,
+   "best_offset": 4,
+   "best_mirror": false,
+   "corr_at_zero": 0.07773524010087238
+  },
+  {
+   "obs_id": 3730750,
+   "station_id": 440,
+   "best_corr": 0.03896080316990515,
+   "best_offset": 0,
+   "best_mirror": false,
+   "corr_at_zero": 0.03896080316990515
+  },
+  {
+   "obs_id": 3324331,
+   "station_id": 1874,
+   "best_corr": 0.06343921254905285,
+   "best_offset": 20,
+   "best_mirror": false,
+   "corr_at_zero": 0.004947246693689443
+  },
+  {
+   "obs_id": 3649834,
+   "station_id": 2011,
+   "best_corr": 0.10296139746340628,
+   "best_offset": 2,
+   "best_mirror": false,
+   "corr_at_zero": 0.09351096242159455
+  },
+  {
+   "obs_id": 7983773,
+   "station_id": 2957,
+   "best_corr": 0.11587802733563235,
+   "best_offset": 18,
+   "best_mirror": false,
+   "corr_at_zero": -0.08176694720052126
+  },
+  {
+   "obs_id": 3522075,
+   "station_id": 440,
+   "best_corr": 0.0335109302951315,
+   "best_offset": 28,
+   "best_mirror": false,
+   "corr_at_zero": -0.046487725578402285
+  },
+  {
+   "obs_id": 3816844,
+   "station_id": 440,
+   "best_corr": 0.04026198406373829,
+   "best_offset": 28,
+   "best_mirror": false,
+   "corr_at_zero": 0.020507871992729663
+  },
+  {
+   "obs_id": 12120715,
+   "station_id": 4254,
+   "best_corr": 0.1766883243902979,
+   "best_offset": 12,
+   "best_mirror": false,
+   "corr_at_zero": 0.03517061878623777
+  },
+  {
+   "obs_id": 484394,
+   "station_id": 440,
+   "best_corr": 0.06105882808966052,
+   "best_offset": -8,
+   "best_mirror": false,
+   "corr_at_zero": -0.010241043183517424
+  },
+  {
+   "obs_id": 518939,
+   "station_id": 440,
+   "best_corr": 0.02364194895053491,
+   "best_offset": 20,
+   "best_mirror": false,
+   "corr_at_zero": -0.018910911739080792
+  },
+  {
+   "obs_id": 3515536,
+   "station_id": 440,
+   "best_corr": 0.05939831211468532,
+   "best_offset": 28,
+   "best_mirror": false,
+   "corr_at_zero": -0.018747371817412206
+  },
+  {
+   "obs_id": 4048062,
+   "station_id": 440,
+   "best_corr": 0.07991878429067895,
+   "best_offset": 6,
+   "best_mirror": false,
+   "corr_at_zero": 0.0004135208787981466
+  },
+  {
+   "obs_id": 4053676,
+   "station_id": 440,
+   "best_corr": 0.17491994024188984,
+   "best_offset": 8,
+   "best_mirror": false,
+   "corr_at_zero": -0.051523616774871446
+  },
+  {
+   "obs_id": 3823181,
+   "station_id": 440,
+   "best_corr": 0.09325228470999183,
+   "best_offset": 6,
+   "best_mirror": false,
+   "corr_at_zero": 0.041489925925871626
+  },
+  {
+   "obs_id": 8026240,
+   "station_id": 2957,
+   "best_corr": 0.06098449842093282,
+   "best_offset": -2,
+   "best_mirror": false,
+   "corr_at_zero": 7.886367268067216e-05
+  },
+  {
+   "obs_id": 3726491,
+   "station_id": 440,
+   "best_corr": 0.022361365706133472,
+   "best_offset": 24,
+   "best_mirror": false,
+   "corr_at_zero": -0.003527262325675914
+  },
+  {
+   "obs_id": 3616313,
+   "station_id": 440,
+   "best_corr": 0.07789946638237563,
+   "best_offset": 6,
+   "best_mirror": false,
+   "corr_at_zero": 0.029445396229676967
+  },
+  {
+   "obs_id": 3649745,
+   "station_id": 2011,
+   "best_corr": 0.03616871158566478,
+   "best_offset": 8,
+   "best_mirror": false,
+   "corr_at_zero": 0.002868337430370576
+  },
+  {
+   "obs_id": 3145715,
+   "station_id": 1857,
+   "best_corr": 0.08979034583217194,
+   "best_offset": 16,
+   "best_mirror": false,
+   "corr_at_zero": -0.0001503322030623097
+  },
+  {
+   "obs_id": 3958819,
+   "station_id": 440,
+   "best_corr": 0.019176416570438892,
+   "best_offset": 28,
+   "best_mirror": false,
+   "corr_at_zero": -0.007891529545497293
+  },
+  {
+   "obs_id": 4142288,
+   "station_id": 440,
+   "best_corr": 0.20556388630726813,
+   "best_offset": 8,
+   "best_mirror": false,
+   "corr_at_zero": -0.0084346756211746
+  },
+  {
+   "obs_id": 3921429,
+   "station_id": 440,
+   "best_corr": 0.058637662161231105,
+   "best_offset": 8,
+   "best_mirror": false,
+   "corr_at_zero": 0.01412205162432685
+  },
+  {
+   "obs_id": 4177417,
+   "station_id": 440,
+   "best_corr": 0.0907921174658958,
+   "best_offset": 6,
+   "best_mirror": false,
+   "corr_at_zero": -0.009312353623549102
+  },
+  {
+   "obs_id": 3112261,
+   "station_id": 1857,
+   "best_corr": 0.07621577718590825,
+   "best_offset": 26,
+   "best_mirror": false,
+   "corr_at_zero": 0.00444396779549476
+  },
+  {
+   "obs_id": 3642368,
+   "station_id": 440,
+   "best_corr": 0.023749073933760412,
+   "best_offset": 28,
+   "best_mirror": false,
+   "corr_at_zero": -0.026994444060206964
+  },
+  {
+   "obs_id": 3690881,
+   "station_id": 440,
+   "best_corr": 0.04880059376229722,
+   "best_offset": 4,
+   "best_mirror": false,
+   "corr_at_zero": -0.029171612063611223
+  },
+  {
+   "obs_id": 643769,
+   "station_id": 440,
+   "best_corr": 0.10415349043858785,
+   "best_offset": 2,
+   "best_mirror": false,
+   "corr_at_zero": 0.08910153595151109
+  },
+  {
+   "obs_id": 693498,
+   "station_id": 440,
+   "best_corr": 0.10583328826633773,
+   "best_offset": 4,
+   "best_mirror": false,
+   "corr_at_zero": 0.04017680514206647
+  },
+  {
+   "obs_id": 3864059,
+   "station_id": 440,
+   "best_corr": 0.029601932867598782,
+   "best_offset": 28,
+   "best_mirror": false,
+   "corr_at_zero": -0.05920228500809566
+  },
+  {
+   "obs_id": 3475397,
+   "station_id": 440,
+   "best_corr": 0.06392079115702415,
+   "best_offset": 8,
+   "best_mirror": false,
+   "corr_at_zero": 0.01028124296828267
+  },
+  {
+   "obs_id": 3565300,
+   "station_id": 440,
+   "best_corr": 0.026817894738382815,
+   "best_offset": 22,
+   "best_mirror": false,
+   "corr_at_zero": -0.041234280868049915
+  },
+  {
+   "obs_id": 4011344,
+   "station_id": 440,
+   "best_corr": 0.03883781323419538,
+   "best_offset": 4,
+   "best_mirror": false,
+   "corr_at_zero": 0.008497322379711769
+  },
+  {
+   "obs_id": 4091248,
+   "station_id": 440,
+   "best_corr": 0.04478608040396538,
+   "best_offset": 26,
+   "best_mirror": false,
+   "corr_at_zero": -0.0634920963630543
+  },
+  {
+   "obs_id": 3777043,
+   "station_id": 440,
+   "best_corr": 0.004337286805100405,
+   "best_offset": -2,
+   "best_mirror": false,
+   "corr_at_zero": -0.025363377702507513
+  },
+  {
+   "obs_id": 432515,
+   "station_id": 440,
+   "best_corr": 0.0541060035467904,
+   "best_offset": 20,
+   "best_mirror": false,
+   "corr_at_zero": 0.019912852908129136
+  },
+  {
+   "obs_id": 3766187,
+   "station_id": 440,
+   "best_corr": 0.01888522662780132,
+   "best_offset": 22,
+   "best_mirror": false,
+   "corr_at_zero": -0.06971255956968886
+  },
+  {
+   "obs_id": 9045366,
+   "station_id": 3413,
+   "best_corr": 0.09645185202439374,
+   "best_offset": 2,
+   "best_mirror": false,
+   "corr_at_zero": 0.06925795828648174
+  },
+  {
+   "obs_id": 638411,
+   "station_id": 440,
+   "best_corr": 0.02857875305338113,
+   "best_offset": 20,
+   "best_mirror": false,
+   "corr_at_zero": -0.00730614405964197
+  }
+ ]
+}

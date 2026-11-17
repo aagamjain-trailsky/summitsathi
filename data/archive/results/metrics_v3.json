@@ -1,0 +1,1284 @@
+{
+ "protocol": "leave-one-year-out; settings and thresholds tuned on 2020",
+ "tune_years": [
+  2020
+ ],
+ "test_groups": [
+  [
+   2018,
+   2019
+  ],
+  [
+   2021
+  ],
+  [
+   2022,
+   2023,
+   2024,
+   2025
+  ]
+ ],
+ "n_samples": 11096,
+ "events": {
+  "thunder_now": {
+   "test_n": 7788,
+   "test_events": 611,
+   "auc": 0.914084978223079,
+   "avg_precision": 0.5131894035803314,
+   "satellite_only_auc": 0.896533229102696,
+   "climatology_auc": 0.8288378930056393,
+   "best_f1": {
+    "n": 7788,
+    "events": 611,
+    "tp": 323,
+    "fp": 275,
+    "fn": 288,
+    "tn": 6902,
+    "precision": 0.540133779264214,
+    "recall": 0.5286415711947627,
+    "f1": 0.5343258891645989,
+    "false_alarm_ratio": 0.459866220735786,
+    "accuracy": 0.9277092963533642,
+    "f1_ci95": [
+     0.501657751091703,
+     0.5678616182600456
+    ]
+   },
+   "safety": {
+    "n": 7788,
+    "events": 611,
+    "tp": 423,
+    "fp": 603,
+    "fn": 188,
+    "tn": 6574,
+    "precision": 0.41228070175438597,
+    "recall": 0.6923076923076923,
+    "f1": 0.5167990226023214,
+    "false_alarm_ratio": 0.5877192982456141,
+    "accuracy": 0.8984334874165383,
+    "f1_ci95": [
+     0.48664328418812397,
+     0.5465413961535679
+    ]
+   },
+   "top_features": [
+    [
+     "clim_thunder",
+     0.24924909463830755
+    ],
+    [
+     "ot_count_100km",
+     0.041824792341608324
+    ],
+    [
+     "bt_min_100km",
+     0.03939463721850354
+    ],
+    [
+     "frac_lt_233_100km",
+     0.03401847909143295
+    ],
+    [
+     "cold_px_150km",
+     0.03190249936120535
+    ],
+    [
+     "storm_dist_km",
+     0.02818778758689475
+    ],
+    [
+     "frac_lt_253_50km",
+     0.025099381215324196
+    ],
+    [
+     "bt_std_100km",
+     0.014084922882753
+    ],
+    [
+     "clim_cloudy",
+     0.013074781209810543
+    ],
+    [
+     "ot_count_50km",
+     0.012913304735129435
+    ]
+   ],
+   "folds": [
+    {
+     "test_years": [
+      2018,
+      2019
+     ],
+     "n": 2860,
+     "events": 273,
+     "settings": {
+      "max_depth": 3,
+      "learning_rate": 0.05,
+      "class_weight": "balanced"
+     },
+     "thresholds": {
+      "best_f1": 0.8207119069803271,
+      "safety": 0.6363814870326135
+     },
+     "auc": 0.8954351923041525,
+     "configs_tried": [
+      {
+       "max_depth": 3,
+       "learning_rate": 0.05,
+       "class_weight": null,
+       "tune_auc": 0.9062409638554216,
+       "tune_avg_precision": 0.37612182087845747
+      },
+      {
+       "max_depth": 3,
+       "learning_rate": 0.05,
+       "class_weight": "balanced",
+       "tune_auc": 0.8936867469879518,
+       "tune_avg_precision": 0.38965520230044226
+      },
+      {
+       "max_depth": 3,
+       "learning_rate": 0.1,
+       "class_weight": null,
+       "tune_auc": 0.9010361445783133,
+       "tune_avg_precision": 0.3446536373164558
+      },
+      {
+       "max_depth": 3,
+       "learning_rate": 0.1,
+       "class_weight": "balanced",
+       "tune_auc": 0.8891566265060241,
+       "tune_avg_precision": 0.35050549900179256
+      },
+      {
+       "max_depth": 5,
+       "learning_rate": 0.05,
+       "class_weight": null,
+       "tune_auc": 0.9076867469879518,
+       "tune_avg_precision": 0.3522038319357999
+      },
+      {
+       "max_depth": 5,
+       "learning_rate": 0.05,
+       "class_weight": "balanced",
+       "tune_auc": 0.8918313253012048,
+       "tune_avg_precision": 0.35405912231751263
+      },
+      {
+       "max_depth": 5,
+       "learning_rate": 0.1,
+       "class_weight": null,
+       "tune_auc": 0.9064578313253012,
+       "tune_avg_precision": 0.3709622159569465
+      },
+      {
+       "max_depth": 5,
+       "learning_rate": 0.1,
+       "class_weight": "balanced",
+       "tune_auc": 0.895566265060241,
+       "tune_avg_precision": 0.31985034739929186
+      }
+     ]
+    },
+    {
+     "test_years": [
+      2021
+     ],
+     "n": 4559,
+     "events": 269,
+     "settings": {
+      "max_depth": 3,
+      "learning_rate": 0.05,
+      "class_weight": "balanced"
+     },
+     "thresholds": {
+      "best_f1": 0.7128978687613204,
+      "safety": 0.5154666415449543
+     },
+     "auc": 0.9283940347137373,
+     "configs_tried": [
+      {
+       "max_depth": 3,
+       "learning_rate": 0.05,
+       "class_weight": null,
+       "tune_auc": 0.9099036144578313,
+       "tune_avg_precision": 0.3606367548963681
+      },
+      {
+       "max_depth": 3,
+       "learning_rate": 0.05,
+       "class_weight": "balanced",
+       "tune_auc": 0.911566265060241,
+       "tune_avg_precision": 0.4095120481883652
+      },
+      {
+       "max_depth": 3,
+       "learning_rate": 0.1,
+       "class_weight": null,
+       "tune_auc": 0.9044819277108433,
+       "tune_avg_precision": 0.35551183769339145
+      },
+      {
+       "max_depth": 3,
+       "learning_rate": 0.1,
+       "class_weight": "balanced",
+       "tune_auc": 0.9103132530120482,
+       "tune_avg_precision": 0.4037759492543773
+      },
+      {
+       "max_depth": 5,
+       "learning_rate": 0.05,
+       "class_weight": null,
+       "tune_auc": 0.9101686746987951,
+       "tune_avg_precision": 0.35826231855651314
+      },
+      {
+       "max_depth": 5,
+       "learning_rate": 0.05,
+       "class_weight": "balanced",
+       "tune_auc": 0.9044819277108433,
+       "tune_avg_precision": 0.341734340757764
+      },
+      {
+       "max_depth": 5,
+       "learning_rate": 0.1,
+       "class_weight": null,
+       "tune_auc": 0.9024819277108433,
+       "tune_avg_precision": 0.33306264587976503
+      },
+      {
+       "max_depth": 5,
+       "learning_rate": 0.1,
+       "class_weight": "balanced",
+       "tune_auc": 0.8977349397590362,
+       "tune_avg_precision": 0.3513866680905309
+      }
+     ]
+    },
+    {
+     "test_years": [
+      2022,
+      2023,
+      2024,
+      2025
+     ],
+     "n": 369,
+     "events": 69,
+     "settings": {
+      "max_depth": 3,
+      "learning_rate": 0.05,
+      "class_weight": "balanced"
+     },
+     "thresholds": {
+      "best_f1": 0.8518212983602623,
+      "safety": 0.41491727770168546
+     },
+     "auc": 0.8466183574879227,
+     "configs_tried": [
+      {
+       "max_depth": 3,
+       "learning_rate": 0.05,
+       "class_weight": null,
+       "tune_auc": 0.9088192771084337,
+       "tune_avg_precision": 0.40633356648487434
+      },
+      {
+       "max_depth": 3,
+       "learning_rate": 0.05,
+       "class_weight": "balanced",
+       "tune_auc": 0.9058313253012048,
+       "tune_avg_precision": 0.4393986308720543
+      },
+      {
+       "max_depth": 3,
+       "learning_rate": 0.1,
+       "class_weight": null,
+       "tune_auc": 0.9016867469879518,
+       "tune_avg_precision": 0.3760529723897996
+      },
+      {
+       "max_depth": 3,
+       "learning_rate": 0.1,
+       "class_weight": "balanced",
+       "tune_auc": 0.9016867469879518,
+       "tune_avg_precision": 0.36505736771752656
+      },
+      {
+       "max_depth": 5,
+       "learning_rate": 0.05,
+       "class_weight": null,
+       "tune_auc": 0.9021927710843374,
+       "tune_avg_precision": 0.3889669335913798
+      },
+      {
+       "max_depth": 5,
+       "learning_rate": 0.05,
+       "class_weight": "balanced",
+       "tune_auc": 0.9000963855421686,
+       "tune_avg_precision": 0.3767239760913234
+      },
+      {
+       "max_depth": 5,
+       "learning_rate": 0.1,
+       "class_weight": null,
+       "tune_auc": 0.8987469879518072,
+       "tune_avg_precision": 0.3980337977933881
+      },
+      {
+       "max_depth": 5,
+       "learning_rate": 0.1,
+       "class_weight": "balanced",
+       "tune_auc": 0.8963132530120482,
+       "tune_avg_precision": 0.3409258418315041
+      }
+     ]
+    }
+   ]
+  },
+  "rain_now": {
+   "test_n": 7788,
+   "test_events": 249,
+   "auc": 0.8706927457808419,
+   "avg_precision": 0.2403191798940672,
+   "satellite_only_auc": 0.9093421037912094,
+   "climatology_auc": 0.7667150895663833,
+   "best_f1": {
+    "n": 7788,
+    "events": 249,
+    "tp": 123,
+    "fp": 406,
+    "fn": 126,
+    "tn": 7133,
+    "precision": 0.23251417769376181,
+    "recall": 0.4939759036144578,
+    "f1": 0.3161953727506427,
+    "false_alarm_ratio": 0.7674858223062382,
+    "accuracy": 0.9316897791474062,
+    "f1_ci95": [
+     0.2724934032453313,
+     0.3601048676870545
+    ]
+   },
+   "safety": {
+    "n": 7788,
+    "events": 249,
+    "tp": 225,
+    "fp": 1751,
+    "fn": 24,
+    "tn": 5788,
+    "precision": 0.11386639676113361,
+    "recall": 0.9036144578313253,
+    "f1": 0.20224719101123598,
+    "false_alarm_ratio": 0.8861336032388664,
+    "accuracy": 0.772085259373395,
+    "f1_ci95": [
+     0.1789969619704241,
+     0.22323048667739845
+    ]
+   },
+   "top_features": [
+    [
+     "frac_lt_253_100km",
+     0.09064166038163039
+    ],
+    [
+     "ot_count_100km",
+     0.04328897885678906
+    ],
+    [
+     "clim_rain",
+     0.03945675564205689
+    ],
+    [
+     "bt_min_100km",
+     0.032818937566732924
+    ],
+    [
+     "cold_px_150km",
+     0.028851073869478484
+    ],
+    [
+     "vis_refl_mean",
+     0.023130432691339898
+    ],
+    [
+     "bt_grad_max",
+     0.020725551594556094
+    ],
+    [
+     "clim_thunder",
+     0.019650094091989555
+    ],
+    [
+     "bt_std",
+     0.018049578916638286
+    ],
+    [
+     "bt_min",
+     0.017268097758630304
+    ]
+   ],
+   "folds": [
+    {
+     "test_years": [
+      2018,
+      2019
+     ],
+     "n": 2860,
+     "events": 87,
+     "settings": {
+      "max_depth": 5,
+      "learning_rate": 0.1,
+      "class_weight": null
+     },
+     "thresholds": {
+      "best_f1": 0.06881189110774809,
+      "safety": 0.008161550320979
+     },
+     "auc": 0.8834657680175418,
+     "configs_tried": [
+      {
+       "max_depth": 3,
+       "learning_rate": 0.05,
+       "class_weight": null,
+       "tune_auc": 0.860663686463729,
+       "tune_avg_precision": 0.2897116273043764
+      },
+      {
+       "max_depth": 3,
+       "learning_rate": 0.05,
+       "class_weight": "balanced",
+       "tune_auc": 0.8398259183045956,
+       "tune_avg_precision": 0.24631468626831807
+      },
+      {
+       "max_depth": 3,
+       "learning_rate": 0.1,
+       "class_weight": null,
+       "tune_auc": 0.8595283710589181,
+       "tune_avg_precision": 0.29022390122140307
+      },
+      {
+       "max_depth": 3,
+       "learning_rate": 0.1,
+       "class_weight": "balanced",
+       "tune_auc": 0.8480569549894746,
+       "tune_avg_precision": 0.24954506024359047
+      },
+      {
+       "max_depth": 5,
+       "learning_rate": 0.05,
+       "class_weight": null,
+       "tune_auc": 0.8588424513351782,
+       "tune_avg_precision": 0.27431031025871006
+      },
+      {
+       "max_depth": 5,
+       "learning_rate": 0.05,
+       "class_weight": "balanced",
+       "tune_auc": 0.8562406868658199,
+       "tune_avg_precision": 0.2684402759414058
+      },
+      {
+       "max_depth": 5,
+       "learning_rate": 0.1,
+       "class_weight": null,
+       "tune_auc": 0.8664348731048511,
+       "tune_avg_precision": 0.2941775119584923
+      },
+      {
+       "max_depth": 5,
+       "learning_rate": 0.1,
+       "class_weight": "balanced",
+       "tune_auc": 0.85799096478157,
+       "tune_avg_precision": 0.26349599000553137
+      }
+     ]
+    },
+    {
+     "test_years": [
+      2021
+     ],
+     "n": 4559,
+     "events": 92,
+     "settings": {
+      "max_depth": 3,
+      "learning_rate": 0.05,
+      "class_weight": "balanced"
+     },
+     "thresholds": {
+      "best_f1": 0.5884753081622156,
+      "safety": 0.022220103252807905
+     },
+     "auc": 0.9073373823497922,
+     "configs_tried": [
+      {
+       "max_depth": 3,
+       "learning_rate": 0.05,
+       "class_weight": null,
+       "tune_auc": 0.80035005558315,
+       "tune_avg_precision": 0.29067011075884835
+      },
+      {
+       "max_depth": 3,
+       "learning_rate": 0.05,
+       "class_weight": "balanced",
+       "tune_auc": 0.7831784100853851,
+       "tune_avg_precision": 0.2971130721178126
+      },
+      {
+       "max_depth": 3,
+       "learning_rate": 0.1,
+       "class_weight": null,
+       "tune_auc": 0.7810023888928309,
+       "tune_avg_precision": 0.2817746993772475
+      },
+      {
+       "max_depth": 3,
+       "learning_rate": 0.1,
+       "class_weight": "balanced",
+       "tune_auc": 0.7702878497599281,
+       "tune_avg_precision": 0.25955620377755584
+      },
+      {
+       "max_depth": 5,
+       "learning_rate": 0.05,
+       "class_weight": null,
+       "tune_auc": 0.7991201305612715,
+       "tune_avg_precision": 0.296999718445698
+      },
+      {
+       "max_depth": 5,
+       "learning_rate": 0.05,
+       "class_weight": "balanced",
+       "tune_auc": 0.7837933725963244,
+       "tune_avg_precision": 0.2785723817115838
+      },
+      {
+       "max_depth": 5,
+       "learning_rate": 0.1,
+       "class_weight": null,
+       "tune_auc": 0.7831784100853851,
+       "tune_avg_precision": 0.2883135583296909
+      },
+      {
+       "max_depth": 5,
+       "learning_rate": 0.1,
+       "class_weight": "balanced",
+       "tune_auc": 0.7748291113791717,
+       "tune_avg_precision": 0.27766294072259173
+      }
+     ]
+    },
+    {
+     "test_years": [
+      2022,
+      2023,
+      2024,
+      2025
+     ],
+     "n": 369,
+     "events": 70,
+     "settings": {
+      "max_depth": 5,
+      "learning_rate": 0.1,
+      "class_weight": null
+     },
+     "thresholds": {
+      "best_f1": 0.034625753828012425,
+      "safety": 0.0014650529405218435
+     },
+     "auc": 0.7601051122790253,
+     "configs_tried": [
+      {
+       "max_depth": 3,
+       "learning_rate": 0.05,
+       "class_weight": null,
+       "tune_auc": 0.8547505853970057,
+       "tune_avg_precision": 0.2844002097872835
+      },
+      {
+       "max_depth": 3,
+       "learning_rate": 0.05,
+       "class_weight": "balanced",
+       "tune_auc": 0.8442489179025048,
+       "tune_avg_precision": 0.25208295892590143
+      },
+      {
+       "max_depth": 3,
+       "learning_rate": 0.1,
+       "class_weight": null,
+       "tune_auc": 0.8533550935452588,
+       "tune_avg_precision": 0.2703182904635673
+      },
+      {
+       "max_depth": 3,
+       "learning_rate": 0.1,
+       "class_weight": "balanced",
+       "tune_auc": 0.8503275857990965,
+       "tune_avg_precision": 0.28046374653626266
+      },
+      {
+       "max_depth": 5,
+       "learning_rate": 0.05,
+       "class_weight": null,
+       "tune_auc": 0.8391399985808558,
+       "tune_avg_precision": 0.284130536528774
+      },
+      {
+       "max_depth": 5,
+       "learning_rate": 0.05,
+       "class_weight": "balanced",
+       "tune_auc": 0.8399914851344639,
+       "tune_avg_precision": 0.2633970087386636
+      },
+      {
+       "max_depth": 5,
+       "learning_rate": 0.1,
+       "class_weight": null,
+       "tune_auc": 0.8417890678587479,
+       "tune_avg_precision": 0.3009566227802316
+      },
+      {
+       "max_depth": 5,
+       "learning_rate": 0.1,
+       "class_weight": "balanced",
+       "tune_auc": 0.8180893587833203,
+       "tune_avg_precision": 0.2813495103319537
+      }
+     ]
+    }
+   ]
+  },
+  "rain_next3h": {
+   "test_n": 7788,
+   "test_events": 299,
+   "auc": 0.9031301650447412,
+   "avg_precision": 0.30323635637745056,
+   "satellite_only_auc": 0.8895039368777663,
+   "climatology_auc": 0.7722045845612584,
+   "best_f1": {
+    "n": 7788,
+    "events": 299,
+    "tp": 154,
+    "fp": 503,
+    "fn": 145,
+    "tn": 6986,
+    "precision": 0.2343987823439878,
+    "recall": 0.5150501672240803,
+    "f1": 0.3221757322175732,
+    "false_alarm_ratio": 0.7656012176560122,
+    "accuracy": 0.9167950693374423,
+    "f1_ci95": [
+     0.28570695218539166,
+     0.3592449518748309
+    ]
+   },
+   "safety": {
+    "n": 7788,
+    "events": 299,
+    "tp": 246,
+    "fp": 1391,
+    "fn": 53,
+    "tn": 6098,
+    "precision": 0.15027489309712888,
+    "recall": 0.822742474916388,
+    "f1": 0.25413223140495866,
+    "false_alarm_ratio": 0.8497251069028711,
+    "accuracy": 0.8145865434001027,
+    "f1_ci95": [
+     0.22766569791365782,
+     0.2792693580331125
+    ]
+   },
+   "top_features": [
+    [
+     "frac_lt_253_100km",
+     0.07610111289688241
+    ],
+    [
+     "clim_rain",
+     0.06686340630194965
+    ],
+    [
+     "vis_refl_mean",
+     0.059755209157513034
+    ],
+    [
+     "cold_px_150km",
+     0.053698021263541895
+    ],
+    [
+     "vis_refl_p90",
+     0.051110264169048215
+    ],
+    [
+     "hour_cos",
+     0.039731256180195594
+    ],
+    [
+     "ot_count_100km",
+     0.02474965465339755
+    ],
+    [
+     "bt_min_100km",
+     0.021154742097380136
+    ],
+    [
+     "abs_scan",
+     0.01866366116815217
+    ],
+    [
+     "hour_sin",
+     0.017210025435575593
+    ]
+   ],
+   "folds": [
+    {
+     "test_years": [
+      2018,
+      2019
+     ],
+     "n": 2860,
+     "events": 114,
+     "settings": {
+      "max_depth": 3,
+      "learning_rate": 0.1,
+      "class_weight": null
+     },
+     "thresholds": {
+      "best_f1": 0.21269872817590035,
+      "safety": 0.061993848127729234
+     },
+     "auc": 0.8773239544600759,
+     "configs_tried": [
+      {
+       "max_depth": 3,
+       "learning_rate": 0.05,
+       "class_weight": null,
+       "tune_auc": 0.9039410392452363,
+       "tune_avg_precision": 0.4545407080892581
+      },
+      {
+       "max_depth": 3,
+       "learning_rate": 0.05,
+       "class_weight": "balanced",
+       "tune_auc": 0.8947335824438986,
+       "tune_avg_precision": 0.4130889183153611
+      },
+      {
+       "max_depth": 3,
+       "learning_rate": 0.1,
+       "class_weight": null,
+       "tune_auc": 0.8995644005863044,
+       "tune_avg_precision": 0.4603142031019906
+      },
+      {
+       "max_depth": 3,
+       "learning_rate": 0.1,
+       "class_weight": "balanced",
+       "tune_auc": 0.888664092982927,
+       "tune_avg_precision": 0.34924366212591557
+      },
+      {
+       "max_depth": 5,
+       "learning_rate": 0.05,
+       "class_weight": null,
+       "tune_auc": 0.8971489915151014,
+       "tune_avg_precision": 0.454191792064899
+      },
+      {
+       "max_depth": 5,
+       "learning_rate": 0.05,
+       "class_weight": "balanced",
+       "tune_auc": 0.8798695266211111,
+       "tune_avg_precision": 0.4189227112240308
+      },
+      {
+       "max_depth": 5,
+       "learning_rate": 0.1,
+       "class_weight": null,
+       "tune_auc": 0.8917814158013171,
+       "tune_avg_precision": 0.44868541220458635
+      },
+      {
+       "max_depth": 5,
+       "learning_rate": 0.1,
+       "class_weight": "balanced",
+       "tune_auc": 0.8802204834947047,
+       "tune_avg_precision": 0.4159258754028268
+      }
+     ]
+    },
+    {
+     "test_years": [
+      2021
+     ],
+     "n": 4559,
+     "events": 104,
+     "settings": {
+      "max_depth": 3,
+      "learning_rate": 0.05,
+      "class_weight": null
+     },
+     "thresholds": {
+      "best_f1": 0.07924086234328018,
+      "safety": 0.013104701737670482
+     },
+     "auc": 0.9164098247431581,
+     "configs_tried": [
+      {
+       "max_depth": 3,
+       "learning_rate": 0.05,
+       "class_weight": null,
+       "tune_auc": 0.8169037345940254,
+       "tune_avg_precision": 0.3800297416344633
+      },
+      {
+       "max_depth": 3,
+       "learning_rate": 0.05,
+       "class_weight": "balanced",
+       "tune_auc": 0.8210532835112203,
+       "tune_avg_precision": 0.3455139474738135
+      },
+      {
+       "max_depth": 3,
+       "learning_rate": 0.1,
+       "class_weight": null,
+       "tune_auc": 0.7936167138049919,
+       "tune_avg_precision": 0.3489355148743574
+      },
+      {
+       "max_depth": 3,
+       "learning_rate": 0.1,
+       "class_weight": "balanced",
+       "tune_auc": 0.7832531637729928,
+       "tune_avg_precision": 0.340595468160852
+      },
+      {
+       "max_depth": 5,
+       "learning_rate": 0.05,
+       "class_weight": null,
+       "tune_auc": 0.8255125002580566,
+       "tune_avg_precision": 0.3138175186944674
+      },
+      {
+       "max_depth": 5,
+       "learning_rate": 0.05,
+       "class_weight": "balanced",
+       "tune_auc": 0.806643407171907,
+       "tune_avg_precision": 0.33448933461780156
+      },
+      {
+       "max_depth": 5,
+       "learning_rate": 0.1,
+       "class_weight": null,
+       "tune_auc": 0.7934515576291831,
+       "tune_avg_precision": 0.2968001011819093
+      },
+      {
+       "max_depth": 5,
+       "learning_rate": 0.1,
+       "class_weight": "balanced",
+       "tune_auc": 0.7827164062016144,
+       "tune_avg_precision": 0.3199721725386927
+      }
+     ]
+    },
+    {
+     "test_years": [
+      2022,
+      2023,
+      2024,
+      2025
+     ],
+     "n": 369,
+     "events": 81,
+     "settings": {
+      "max_depth": 5,
+      "learning_rate": 0.05,
+      "class_weight": null
+     },
+     "thresholds": {
+      "best_f1": 0.15153570247897927,
+      "safety": 0.019718504376017125
+     },
+     "auc": 0.7602023319615913,
+     "configs_tried": [
+      {
+       "max_depth": 3,
+       "learning_rate": 0.05,
+       "class_weight": null,
+       "tune_auc": 0.8712401164351039,
+       "tune_avg_precision": 0.359638087619361
+      },
+      {
+       "max_depth": 3,
+       "learning_rate": 0.05,
+       "class_weight": "balanced",
+       "tune_auc": 0.8673589463035983,
+       "tune_avg_precision": 0.326673277523402
+      },
+      {
+       "max_depth": 3,
+       "learning_rate": 0.1,
+       "class_weight": null,
+       "tune_auc": 0.8775160511158364,
+       "tune_avg_precision": 0.3715994445177979
+      },
+      {
+       "max_depth": 3,
+       "learning_rate": 0.1,
+       "class_weight": "balanced",
+       "tune_auc": 0.8625074836392164,
+       "tune_avg_precision": 0.30498436628036096
+      },
+      {
+       "max_depth": 5,
+       "learning_rate": 0.05,
+       "class_weight": null,
+       "tune_auc": 0.8706207807758212,
+       "tune_avg_precision": 0.3737242447285683
+      },
+      {
+       "max_depth": 5,
+       "learning_rate": 0.05,
+       "class_weight": "balanced",
+       "tune_auc": 0.8543941865026116,
+       "tune_avg_precision": 0.32397332876927143
+      },
+      {
+       "max_depth": 5,
+       "learning_rate": 0.1,
+       "class_weight": null,
+       "tune_auc": 0.8747083961270877,
+       "tune_avg_precision": 0.36720642941988696
+      },
+      {
+       "max_depth": 5,
+       "learning_rate": 0.1,
+       "class_weight": "balanced",
+       "tune_auc": 0.8420900514048597,
+       "tune_avg_precision": 0.2979439353841951
+      }
+     ]
+    }
+   ]
+  },
+  "fog_now": {
+   "test_n": 7788,
+   "test_events": 182,
+   "auc": 0.9579655159460576,
+   "avg_precision": 0.43786626154620206,
+   "satellite_only_auc": 0.8567115897512952,
+   "climatology_auc": 0.9531977357378356,
+   "best_f1": {
+    "n": 7788,
+    "events": 182,
+    "tp": 115,
+    "fp": 146,
+    "fn": 67,
+    "tn": 7460,
+    "precision": 0.44061302681992337,
+    "recall": 0.6318681318681318,
+    "f1": 0.5191873589164786,
+    "false_alarm_ratio": 0.5593869731800766,
+    "accuracy": 0.9726502311248074,
+    "f1_ci95": [
+     0.45925736961451247,
+     0.5755180533751962
+    ]
+   },
+   "safety": {
+    "n": 7788,
+    "events": 182,
+    "tp": 178,
+    "fp": 3719,
+    "fn": 4,
+    "tn": 3887,
+    "precision": 0.04567616114960226,
+    "recall": 0.978021978021978,
+    "f1": 0.08727629320911989,
+    "false_alarm_ratio": 0.9543238388503977,
+    "accuracy": 0.5219568567026194,
+    "f1_ci95": [
+     0.07608224428248303,
+     0.10009966799412819
+    ]
+   },
+   "top_features": [
+    [
+     "clim_fog",
+     0.15805243789054343
+    ],
+    [
+     "vis_refl_p90",
+     0.04221715293634872
+    ],
+    [
+     "bt_grad_mean",
+     0.03467580702911732
+    ],
+    [
+     "bt_std",
+     0.017551570140030667
+    ],
+    [
+     "abs_scan",
+     0.0166497544393135
+    ],
+    [
+     "bt_p50",
+     0.013148709754388498
+    ],
+    [
+     "storm_dist_km",
+     0.011640965196445446
+    ],
+    [
+     "clim_cloudy",
+     0.010225156164796178
+    ],
+    [
+     "hour_cos",
+     0.00903408047785015
+    ],
+    [
+     "bt_std_50km",
+     0.006675054482140983
+    ]
+   ],
+   "folds": [
+    {
+     "test_years": [
+      2018,
+      2019
+     ],
+     "n": 2860,
+     "events": 22,
+     "settings": {
+      "max_depth": 5,
+      "learning_rate": 0.1,
+      "class_weight": null
+     },
+     "thresholds": {
+      "best_f1": 0.1311386706808254,
+      "safety": 0.008412944952095918
+     },
+     "auc": 0.98388750080082,
+     "configs_tried": [
+      {
+       "max_depth": 3,
+       "learning_rate": 0.05,
+       "class_weight": null,
+       "tune_auc": 0.9227688787185355,
+       "tune_avg_precision": 0.229354915852091
+      },
+      {
+       "max_depth": 3,
+       "learning_rate": 0.05,
+       "class_weight": "balanced",
+       "tune_auc": 0.9220061022120518,
+       "tune_avg_precision": 0.22730991897383174
+      },
+      {
+       "max_depth": 3,
+       "learning_rate": 0.1,
+       "class_weight": null,
+       "tune_auc": 0.9227688787185355,
+       "tune_avg_precision": 0.22912101200347468
+      },
+      {
+       "max_depth": 3,
+       "learning_rate": 0.1,
+       "class_weight": "balanced",
+       "tune_auc": 0.9143783371472158,
+       "tune_avg_precision": 0.23590225893314026
+      },
+      {
+       "max_depth": 5,
+       "learning_rate": 0.05,
+       "class_weight": null,
+       "tune_auc": 0.9181922196796338,
+       "tune_avg_precision": 0.2815759602405203
+      },
+      {
+       "max_depth": 5,
+       "learning_rate": 0.05,
+       "class_weight": "balanced",
+       "tune_auc": 0.8979786422578184,
+       "tune_avg_precision": 0.24543641686529416
+      },
+      {
+       "max_depth": 5,
+       "learning_rate": 0.1,
+       "class_weight": null,
+       "tune_auc": 0.9221967963386728,
+       "tune_avg_precision": 0.3317438102578664
+      },
+      {
+       "max_depth": 5,
+       "learning_rate": 0.1,
+       "class_weight": "balanced",
+       "tune_auc": 0.9071319603356217,
+       "tune_avg_precision": 0.25591236072250456
+      }
+     ]
+    },
+    {
+     "test_years": [
+      2021
+     ],
+     "n": 4559,
+     "events": 156,
+     "settings": {
+      "max_depth": 3,
+      "learning_rate": 0.1,
+      "class_weight": null
+     },
+     "thresholds": {
+      "best_f1": 0.009011075037455267,
+      "safety": 7.414329918355897e-06
+     },
+     "auc": 0.95709219238631,
+     "configs_tried": [
+      {
+       "max_depth": 3,
+       "learning_rate": 0.05,
+       "class_weight": null,
+       "tune_auc": 0.7637299771167048,
+       "tune_avg_precision": 0.06742091073034721
+      },
+      {
+       "max_depth": 3,
+       "learning_rate": 0.05,
+       "class_weight": "balanced",
+       "tune_auc": 0.7198703279938978,
+       "tune_avg_precision": 0.04779869776193305
+      },
+      {
+       "max_depth": 3,
+       "learning_rate": 0.1,
+       "class_weight": null,
+       "tune_auc": 0.7267353165522502,
+       "tune_avg_precision": 0.07199994422181188
+      },
+      {
+       "max_depth": 3,
+       "learning_rate": 0.1,
+       "class_weight": "balanced",
+       "tune_auc": 0.6769641495041953,
+       "tune_avg_precision": 0.04707884628447
+      },
+      {
+       "max_depth": 5,
+       "learning_rate": 0.05,
+       "class_weight": null,
+       "tune_auc": 0.8024408848207475,
+       "tune_avg_precision": 0.06811097356110594
+      },
+      {
+       "max_depth": 5,
+       "learning_rate": 0.05,
+       "class_weight": "balanced",
+       "tune_auc": 0.7103356216628528,
+       "tune_avg_precision": 0.04205036574813657
+      },
+      {
+       "max_depth": 5,
+       "learning_rate": 0.1,
+       "class_weight": null,
+       "tune_auc": 0.7873760488176964,
+       "tune_avg_precision": 0.055290161652216716
+      },
+      {
+       "max_depth": 5,
+       "learning_rate": 0.1,
+       "class_weight": "balanced",
+       "tune_auc": 0.7606788710907704,
+       "tune_avg_precision": 0.04566332242827501
+      }
+     ]
+    },
+    {
+     "test_years": [
+      2022,
+      2023,
+      2024,
+      2025
+     ],
+     "n": 369,
+     "events": 4,
+     "settings": {
+      "max_depth": 5,
+      "learning_rate": 0.05,
+      "class_weight": null
+     },
+     "thresholds": {
+      "best_f1": 0.2014861520176135,
+      "safety": 4.320469461433646e-05
+     },
+     "auc": 0.810958904109589,
+     "configs_tried": [
+      {
+       "max_depth": 3,
+       "learning_rate": 0.05,
+       "class_weight": null,
+       "tune_auc": 0.8039664378337147,
+       "tune_avg_precision": 0.19264275084386231
+      },
+      {
+       "max_depth": 3,
+       "learning_rate": 0.05,
+       "class_weight": "balanced",
+       "tune_auc": 0.8152173913043478,
+       "tune_avg_precision": 0.1902599277018805
+      },
+      {
+       "max_depth": 3,
+       "learning_rate": 0.1,
+       "class_weight": null,
+       "tune_auc": 0.7837528604118993,
+       "tune_avg_precision": 0.18797165767597673
+      },
+      {
+       "max_depth": 3,
+       "learning_rate": 0.1,
+       "class_weight": "balanced",
+       "tune_auc": 0.7845156369183829,
+       "tune_avg_precision": 0.18845899323273568
+      },
+      {
+       "max_depth": 5,
+       "learning_rate": 0.05,
+       "class_weight": null,
+       "tune_auc": 0.7438977879481312,
+       "tune_avg_precision": 0.20779520538184645
+      },
+      {
+       "max_depth": 5,
+       "learning_rate": 0.05,
+       "class_weight": "balanced",
+       "tune_auc": 0.7282608695652174,
+       "tune_avg_precision": 0.19072470098389258
+      },
+      {
+       "max_depth": 5,
+       "learning_rate": 0.1,
+       "class_weight": null,
+       "tune_auc": 0.7866132723112128,
+       "tune_avg_precision": 0.2027507896126349
+      },
+      {
+       "max_depth": 5,
+       "learning_rate": 0.1,
+       "class_weight": "balanced",
+       "tune_auc": 0.7660183066361556,
+       "tune_avg_precision": 0.19748003605261188
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

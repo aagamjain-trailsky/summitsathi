@@ -1,0 +1,114 @@
+[COLLECT] Downloading 508 images...
+[COLLECT] 50/508
+[COLLECT] 100/508
+[COLLECT] 150/508
+[COLLECT] 200/508
+[COLLECT] 250/508
+[COLLECT] 300/508
+[COLLECT] 350/508
+[COLLECT] 400/508
+[COLLECT] 450/508
+[COLLECT] 500/508
+
+[COLLECT] ── Archive status ──────────────────
+[COLLECT] NOAA-15: 375 passes, 349 downloaded, 2018-12-31 → 2025-08-17
+[COLLECT] NOAA-18: 305 passes, 271 downloaded, 2018-12-30 → 2025-06-01
+[COLLECT] NOAA-19: 321 passes, 103 downloaded, 2018-12-23 → 2025-08-11
+[COLLECT] stations screened bad: 1
+[COLLECT] stations screened good: 5
+[COLLECT] Crawl jobs unfinished: 0
+
+[COLLECT] Downloading 274 images...
+[COLLECT] 50/274
+[COLLECT] 100/274
+[COLLECT] 150/274
+[COLLECT] 200/274
+[COLLECT] 250/274
+
+[COLLECT] ── Archive status ──────────────────
+[COLLECT] NOAA-15: 375 passes, 375 downloaded, 2018-12-31 → 2025-08-17
+[COLLECT] NOAA-18: 305 passes, 305 downloaded, 2018-12-30 → 2025-06-01
+[COLLECT] NOAA-19: 321 passes, 313 downloaded, 2018-12-23 → 2025-08-11
+[COLLECT] stations screened bad: 1
+[COLLECT] stations screened good: 5
+[COLLECT] Crawl jobs unfinished: 0
+
+[COLLECT] Downloading 4 images...
+
+[COLLECT] ── Archive status ──────────────────
+[COLLECT] NOAA-15: 375 passes, 375 downloaded, 2018-12-31 → 2025-08-17
+[COLLECT] NOAA-18: 305 passes, 305 downloaded, 2018-12-30 → 2025-06-01
+[COLLECT] NOAA-19: 321 passes, 317 downloaded, 2018-12-23 → 2025-08-11
+[COLLECT] stations screened bad: 1
+[COLLECT] stations screened good: 5
+[COLLECT] Crawl jobs unfinished: 0
+
+[COLLECT] Downloading 0 images...
+
+[COLLECT] ── Archive status ──────────────────
+[COLLECT] NOAA-15: 375 passes, 375 downloaded, 2018-12-31 → 2025-08-17
+[COLLECT] NOAA-18: 305 passes, 305 downloaded, 2018-12-30 → 2025-06-01
+[COLLECT] NOAA-19: 321 passes, 317 downloaded, 2018-12-23 → 2025-08-11
+[COLLECT] stations screened bad: 1
+[COLLECT] stations screened good: 5
+[COLLECT] Crawl jobs unfinished: 0
+
+[COLLECT] Downloading 0 images...
+
+[COLLECT] ── Archive status ──────────────────
+[COLLECT] NOAA-15: 375 passes, 375 downloaded, 2018-12-31 → 2025-08-17
+[COLLECT] NOAA-18: 305 passes, 305 downloaded, 2018-12-30 → 2025-06-01
+[COLLECT] NOAA-19: 321 passes, 317 downloaded, 2018-12-23 → 2025-08-11
+[COLLECT] stations screened bad: 1
+[COLLECT] stations screened good: 5
+[COLLECT] Crawl jobs unfinished: 0
+
+[COLLECT] Downloading 0 images...
+
+[COLLECT] ── Archive status ──────────────────
+[COLLECT] NOAA-15: 375 passes, 375 downloaded, 2018-12-31 → 2025-08-17
+[COLLECT] NOAA-18: 305 passes, 305 downloaded, 2018-12-30 → 2025-06-01
+[COLLECT] NOAA-19: 321 passes, 317 downloaded, 2018-12-23 → 2025-08-11
+[COLLECT] stations screened bad: 1
+[COLLECT] stations screened good: 5
+[COLLECT] Crawl jobs unfinished: 0
+
+[COLLECT] Downloading 0 images...
+
+[COLLECT] ── Archive status ──────────────────
+[COLLECT] NOAA-15: 375 passes, 375 downloaded, 2018-12-31 → 2025-08-17
+[COLLECT] NOAA-18: 305 passes, 305 downloaded, 2018-12-30 → 2025-06-01
+[COLLECT] NOAA-19: 321 passes, 317 downloaded, 2018-12-23 → 2025-08-11
+[COLLECT] stations screened bad: 1
+[COLLECT] stations screened good: 5
+[COLLECT] Crawl jobs unfinished: 0
+
+[COLLECT] Downloading 8 images...
+
+[COLLECT] ── Archive status ──────────────────
+[COLLECT] NOAA-15: 379 passes, 379 downloaded, 2018-12-31 → 2025-08-17
+[COLLECT] NOAA-18: 309 passes, 309 downloaded, 2018-12-30 → 2025-06-01
+[COLLECT] NOAA-19: 323 passes, 317 downloaded, 2018-12-23 → 2025-08-11
+[COLLECT] stations screened bad: 1
+[COLLECT] stations screened good: 6
+[COLLECT] Crawl jobs unfinished: 0
+
+[COLLECT] Downloading 422 images...
+[COLLECT] 50/422
+[COLLECT] 100/422
+[COLLECT] 150/422
+[COLLECT] 200/422
+[COLLECT] 250/422
+[COLLECT] 300/422
+[COLLECT] 350/422
+[COLLECT] <urlopen error _ssl.c:1112: The handshake operation timed out>, retrying in 2s
+[COLLECT] 400/422
+
+[COLLECT] ── Archive status ──────────────────
+[COLLECT] NOAA-15: 572 passes, 523 downloaded, 2018-12-31 → 2025-08-18
+[COLLECT] NOAA-18: 541 passes, 487 downloaded, 2018-12-30 → 2025-06-01
+[COLLECT] NOAA-19: 510 passes, 457 downloaded, 2018-12-23 → 2025-08-11
+[COLLECT] stations screened bad: 2
+[COLLECT] stations screened good: 14
+[COLLECT] Crawl jobs unfinished: 0
+

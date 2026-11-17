@@ -1,0 +1,50 @@
+[COLLECT] 95 regional stations
+[COLLECT] station 2379: +4 (first pages)
+[COLLECT] station 2379: 0/6 sampled images have signal (best score 1.8) → bad
+[COLLECT] station 4254: +50 (first pages)
+[COLLECT] station 4254: 6/6 sampled images have signal (best score 34.9) → good
+[COLLECT] station 4254 NOAA-15: +22
+[COLLECT] station 4254 NOAA-19: +1
+[COLLECT] station 440: +75 (first pages)
+[COLLECT] station 440: 2/6 sampled images have signal (best score 15.5) → good
+[COLLECT] station 440 NOAA-15: +192
+[COLLECT] station 440 NOAA-18: +180
+[COLLECT] station 440 NOAA-19: +188
+[COLLECT] station 3399: +33 (first pages)
+[COLLECT] station 3399: 2/6 sampled images have signal (best score 11.8) → good
+[COLLECT] station 893: +14 (first pages)
+[COLLECT] station 893: 6/6 sampled images have signal (best score 22.9) → good
+[COLLECT] station 420: +57 (first pages)
+[COLLECT] station 420: 3/6 sampled images have signal (best score 9.4) → good
+[COLLECT] HTTP 429, waiting 2661s
+[COLLECT] station 2768: +10 (first pages)
+[COLLECT] station 2768: 3/6 sampled images have signal (best score 26.5) → good
+[COLLECT] station 1874: +75 (first pages)
+[COLLECT] station 1874: 5/6 sampled images have signal (best score 18.7) → good
+[COLLECT] station 1874 NOAA-15: +45
+[COLLECT] station 1874 NOAA-18: +40
+[COLLECT] station 1874 NOAA-19: +45
+[COLLECT] station 2011: +58 (first pages)
+[COLLECT] station 2011: 4/6 sampled images have signal (best score 34.3) → good
+[COLLECT] station 2011 NOAA-18: +29
+[COLLECT] station 1857: +69 (first pages)
+[COLLECT] station 1857: 3/6 sampled images have signal (best score 12.1) → good
+[COLLECT] station 1857 NOAA-18: +3
+[COLLECT] station 4286: +4 (first pages)
+[COLLECT] station 4286: 4/4 sampled images have signal (best score 37.6) → good
+[COLLECT] station 472: +74 (first pages)
+[COLLECT] station 472: 5/6 sampled images have signal (best score 13.7) → good
+[COLLECT] station 472 NOAA-18: +4
+[COLLECT] station 472 NOAA-19: +8
+[COLLECT] station 1339: +4 (first pages)
+[COLLECT] station 1339: 3/4 sampled images have signal (best score 15.7) → good
+[COLLECT] station 3413: +75 (first pages)
+[COLLECT] station 3413: 6/6 sampled images have signal (best score 15.2) → good
+[COLLECT] station 3413 NOAA-15: +11
+[COLLECT] station 3413 NOAA-18: +16
+[COLLECT] station 3413 NOAA-19: +5
+[COLLECT] station 2820: +9 (first pages)
+[COLLECT] station 2820: 0/6 sampled images have signal (best score 0.8) → bad
+[COLLECT] station 2957: +38 (first pages)
+[COLLECT] station 2957: 5/6 sampled images have signal (best score 28.3) → good
+[COLLECT] HTTP 429, waiting 2986s

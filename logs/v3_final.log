@@ -1,0 +1,32 @@
+[PROCESS] Done: 677/1425 usable passes, 11156 location samples
+==== process done 16:01
+[TRUTH] 650/673
+==== era5 done 16:01
+[V3] 11096 samples, years [2019, 2020, 2021, 2022, 2023, 2024, 2025], 3109 with a previous pass for cooling rate
+
+[V3] ── Out-of-year test results (leave-one-year-out; settings and thresholds tuned on 2020) ──
+[V3] thunder_now: test n=7788, events=611 (8%)
+[V3]   AUC 0.91  (satellite only 0.90, local history only 0.83)
+[V3]   best_f1  F1 0.53 [0.50–0.57]  catches 53%  right when it fires 54%
+[V3]   safety   F1 0.52 [0.49–0.55]  catches 69%  right when it fires 41%
+[V3]   per test group AUC: 2018-2019: 0.90 (n=2860), 2021: 0.93 (n=4559), 2022-2023-2024-2025: 0.85 (n=369)
+[V3]   top features: clim_thunder, ot_count_100km, bt_min_100km, frac_lt_233_100km, cold_px_150km
+[V3] rain_now: test n=7788, events=249 (3%)
+[V3]   AUC 0.87  (satellite only 0.91, local history only 0.77)
+[V3]   best_f1  F1 0.32 [0.27–0.36]  catches 49%  right when it fires 23%
+[V3]   safety   F1 0.20 [0.18–0.22]  catches 90%  right when it fires 11%
+[V3]   per test group AUC: 2018-2019: 0.88 (n=2860), 2021: 0.91 (n=4559), 2022-2023-2024-2025: 0.76 (n=369)
+[V3]   top features: frac_lt_253_100km, ot_count_100km, clim_rain, bt_min_100km, cold_px_150km
+[V3] rain_next3h: test n=7788, events=299 (4%)
+[V3]   AUC 0.90  (satellite only 0.89, local history only 0.77)
+[V3]   best_f1  F1 0.32 [0.29–0.36]  catches 52%  right when it fires 23%
+[V3]   safety   F1 0.25 [0.23–0.28]  catches 82%  right when it fires 15%
+[V3]   per test group AUC: 2018-2019: 0.88 (n=2860), 2021: 0.92 (n=4559), 2022-2023-2024-2025: 0.76 (n=369)
+[V3]   top features: frac_lt_253_100km, clim_rain, vis_refl_mean, cold_px_150km, vis_refl_p90
+[V3] fog_now: test n=7788, events=182 (2%)
+[V3]   AUC 0.96  (satellite only 0.86, local history only 0.95)
+[V3]   best_f1  F1 0.52 [0.46–0.58]  catches 63%  right when it fires 44%
+[V3]   safety   F1 0.09 [0.08–0.10]  catches 98%  right when it fires 5%
+[V3]   per test group AUC: 2018-2019: 0.98 (n=2860), 2021: 0.96 (n=4559), 2022-2023-2024-2025: 0.81 (n=369)
+[V3]   top features: clim_fog, vis_refl_p90, bt_grad_mean, bt_std, abs_scan
+==== v3 done 16:09

@@ -1,0 +1,24 @@
+[RISK] 8668 samples with ground truth; hazard rate 11.5%
+
+[RISK] ── Climb Risk Score, out-of-year test (n=7,788) ──
+[RISK] AUC 0.88   Brier 0.074 vs local history 0.086 → skill +14%
+[RISK] Calibration (score → what actually happened):
+[RISK]   score    0–10: n= 5553  mean score   1.7  hazard happened   2.8%
+[RISK]   score   10–20: n=  999  mean score  13.5  hazard happened  15.9%
+[RISK]   score   20–30: n=  440  mean score  27.2  hazard happened  39.1%
+[RISK]   score   30–40: n=   59  mean score  32.6  hazard happened  32.2%
+[RISK]   score   40–50: n=  287  mean score  47.4  hazard happened  34.8%
+[RISK]   score   50–60: n=  287  mean score  56.6  hazard happened  62.0%
+[RISK]   score   60–70: n=   12  mean score  66.0  hazard happened  50.0%
+[RISK]   score   70–80: n=   45  mean score  73.9  hazard happened  64.4%
+[RISK]   score   80–90: n=   56  mean score  80.3  hazard happened  69.6%
+[RISK]   score  90–100: n=   50  mean score  99.7  hazard happened  84.0%
+[RISK] Bands:
+[RISK]   MINIMAL      0–10  71.3% of cases  hazard rate 3%
+[RISK]   LOW         10–25  14.0% of cases  hazard rate 18%
+[RISK]   MODERATE    25–45   5.2% of cases  hazard rate 38%
+[RISK]   HIGH        45–70   7.5% of cases  hazard rate 48%
+[RISK]   EXTREME    70–100   1.9% of cases  hazard rate 73%
+[RISK] Safety rules: {'storm_within_20km': {'test_n': 437, 'test_hazard_rate_pct': 54.46224256292906, 'times_applied': 203}, 'overshooting_top_within_50km': {'test_n': 500, 'test_hazard_rate_pct': 55.60000000000001, 'times_applied': 233}}
+[RISK] Floors (from tuning year): {'storm_within_20km': {'floor_score': 45, 'tune_n': 64}, 'overshooting_top_within_50km': {'floor_score': 48, 'tune_n': 87}}
+==== risk done 16:15

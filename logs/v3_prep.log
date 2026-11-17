@@ -1,0 +1,66 @@
+[PROCESS] Cleared previous results
+[PROCESS] 1425 passes to process (timing offsets: {440: 8.0, 4254: 12.0}, default 8.0 s)
+[PROCESS] 25/1425 passes, 7 usable, 32 location samples
+[PROCESS] 50/1425 passes, 14 usable, 183 location samples
+[PROCESS] 75/1425 passes, 24 usable, 369 location samples
+[PROCESS] 100/1425 passes, 32 usable, 552 location samples
+[PROCESS] 125/1425 passes, 42 usable, 791 location samples
+[PROCESS] 150/1425 passes, 48 usable, 987 location samples
+[PROCESS] 175/1425 passes, 57 usable, 1167 location samples
+[PROCESS] 200/1425 passes, 68 usable, 1416 location samples
+[PROCESS] 225/1425 passes, 77 usable, 1634 location samples
+[PROCESS] 250/1425 passes, 85 usable, 1757 location samples
+[PROCESS] 275/1425 passes, 94 usable, 1924 location samples
+[PROCESS] 300/1425 passes, 108 usable, 2228 location samples
+[PROCESS] 325/1425 passes, 126 usable, 2690 location samples
+[PROCESS] 350/1425 passes, 129 usable, 2691 location samples
+[PROCESS] 375/1425 passes, 132 usable, 2714 location samples
+[PROCESS] 400/1425 passes, 137 usable, 2801 location samples
+[PROCESS] 425/1425 passes, 142 usable, 2862 location samples
+[PROCESS] 450/1425 passes, 150 usable, 2970 location samples
+[PROCESS] 475/1425 passes, 155 usable, 3047 location samples
+[PROCESS] 500/1425 passes, 158 usable, 3070 location samples
+[PROCESS] 525/1425 passes, 161 usable, 3089 location samples
+[PROCESS] 550/1425 passes, 167 usable, 3157 location samples
+[PROCESS] 575/1425 passes, 172 usable, 3237 location samples
+[PROCESS] 600/1425 passes, 186 usable, 3572 location samples
+[PROCESS] 625/1425 passes, 208 usable, 4151 location samples
+[PROCESS] 650/1425 passes, 227 usable, 4577 location samples
+[PROCESS] 675/1425 passes, 241 usable, 4786 location samples
+[PROCESS] 700/1425 passes, 250 usable, 4940 location samples
+[PROCESS] 725/1425 passes, 262 usable, 5051 location samples
+[PROCESS] 750/1425 passes, 275 usable, 5283 location samples
+[PROCESS] 775/1425 passes, 294 usable, 5736 location samples
+[PROCESS] 800/1425 passes, 315 usable, 6281 location samples
+[PROCESS] 825/1425 passes, 334 usable, 6779 location samples
+[PROCESS] 850/1425 passes, 354 usable, 7308 location samples
+[PROCESS] 875/1425 passes, 367 usable, 7537 location samples
+[PROCESS] 900/1425 passes, 380 usable, 7679 location samples
+[PROCESS] 925/1425 passes, 388 usable, 7746 location samples
+[PROCESS] 950/1425 passes, 395 usable, 7807 location samples
+[PROCESS] 975/1425 passes, 396 usable, 7813 location samples
+[PROCESS] 1000/1425 passes, 396 usable, 7813 location samples
+[PROCESS] 1025/1425 passes, 397 usable, 7821 location samples
+[PROCESS] 1050/1425 passes, 400 usable, 7839 location samples
+[PROCESS] 1075/1425 passes, 401 usable, 7846 location samples
+[PROCESS] 1100/1425 passes, 401 usable, 7846 location samples
+[PROCESS] 1125/1425 passes, 401 usable, 7846 location samples
+[PROCESS] 1150/1425 passes, 402 usable, 7851 location samples
+[PROCESS] 1175/1425 passes, 404 usable, 7853 location samples
+[PROCESS] 1200/1425 passes, 407 usable, 7895 location samples
+[PROCESS] 1225/1425 passes, 410 usable, 7958 location samples
+[PROCESS] 1250/1425 passes, 411 usable, 7958 location samples
+[PROCESS] 1275/1425 passes, 416 usable, 7959 location samples
+[PROCESS] 1300/1425 passes, 416 usable, 7959 location samples
+[PROCESS] 1325/1425 passes, 418 usable, 7959 location samples
+[PROCESS] 1350/1425 passes, 420 usable, 7965 location samples
+[PROCESS] 1375/1425 passes, 424 usable, 8021 location samples
+[PROCESS] 1400/1425 passes, 429 usable, 8059 location samples
+[PROCESS] 1425/1425 passes, 434 usable, 8131 location samples
+[PROCESS] Done: 434/1425 usable passes, 8131 location samples
+==== process done 15:49
+[TRUTH] 550/634
+[TRUTH] 600/634
+==== era5 done 15:49
+650/658
+==== era5 done 15:45

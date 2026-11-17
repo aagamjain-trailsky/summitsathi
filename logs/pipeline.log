@@ -1,0 +1,82 @@
+
+==== 15:25:03 1-2/7 Crawl skipped (SKIP_CRAWL=1) ====
+
+==== 15:25:03 3/7 Download images ====
+[COLLECT] Downloading 149 images...
+[COLLECT] 50/149
+[COLLECT] 100/149
+
+[COLLECT] ── Archive status ──────────────────
+[COLLECT] NOAA-15: 572 passes, 569 downloaded, 2018-12-31 → 2025-08-18
+[COLLECT] NOAA-18: 541 passes, 541 downloaded, 2018-12-30 → 2025-06-01
+[COLLECT] NOAA-19: 510 passes, 506 downloaded, 2018-12-23 → 2025-08-11
+[COLLECT] stations screened bad: 2
+[COLLECT] stations screened good: 14
+[COLLECT] Crawl jobs unfinished: 0
+
+
+==== 15:27:53 4/7 Measure georeferencing timing per station ====
+~/trailsky/venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+[GEO] 499218: best r=0.10 at offset 28s (r at 0s = -0.02) station 440
+[GEO] 538426: best r=0.05 at offset -8s (r at 0s = -0.00) station 440
+[GEO] 570044: best r=0.05 at offset 28s (r at 0s = -0.03) station 440
+[GEO] 1450905: best r=0.06 at offset -2s (r at 0s = 0.06) station 893
+[GEO] 3771771: best r=0.03 at offset 18s (r at 0s = -0.00) station 440
+[GEO] 9045369: best r=0.12 at offset 2s (r at 0s = 0.08) station 3413
+[GEO] 687196: best r=0.13 at offset 2s (r at 0s = 0.08) station 440
+[GEO] 3470567: best r=0.08 at offset 24s (r at 0s = 0.01) station 440
+[GEO] 4005302: best r=0.07 at offset 16s (r at 0s = 0.01) station 440
+[GEO] 4096246: best r=0.22 at offset 6s (r at 0s = -0.01) station 440
+[GEO] 3869996: best r=0.11 at offset 6s (r at 0s = 0.02) station 440
+[GEO] 4220970: best r=0.09 at offset 6s (r at 0s = 0.03) station 440
+[GEO] 3646515: best r=0.05 at offset 16s (r at 0s = 0.00) station 440
+[GEO] 3686302: best r=0.03 at offset 6s (r at 0s = -0.01) station 440
+[GEO] 9181385: best r=0.06 at offset 4s (r at 0s = 0.02) station 3413
+[GEO] 3916394: best r=0.06 at offset 6s (r at 0s = -0.04) station 440
+[GEO] 4181853: best r=0.16 at offset 8s (r at 0s = -0.05) station 440
+[GEO] 3963536: best r=0.03 at offset 26s (r at 0s = -0.02) station 440
+[GEO] 3149083: best r=0.08 at offset 30s (r at 0s = -0.03) station 1857
+[GEO] 3611044: best r=0.02 at offset 28s (r at 0s = -0.01) station 440
+[GEO] 4137481: best r=0.08 at offset 6s (r at 0s = -0.06) station 440
+[GEO] 669001: best r=0.08 at offset 4s (r at 0s = 0.01) station 440
+[GEO] 716291: best r=0.18 at offset 4s (r at 0s = 0.08) station 440
+[GEO] 3730750: best r=0.04 at offset 0s (r at 0s = 0.04) station 440
+[GEO] 3324331: best r=0.06 at offset 20s (r at 0s = 0.00) station 1874
+[GEO] 3649834: best r=0.10 at offset 2s (r at 0s = 0.09) station 2011
+[GEO] 7983773: best r=0.12 at offset 18s (r at 0s = -0.08) station 2957
+[GEO] 3522075: best r=0.03 at offset 28s (r at 0s = -0.05) station 440
+[GEO] 3816844: best r=0.04 at offset 28s (r at 0s = 0.02) station 440
+[GEO] 12120715: best r=0.18 at offset 12s (r at 0s = 0.04) station 4254
+[GEO] 484394: best r=0.06 at offset -8s (r at 0s = -0.01) station 440
+[GEO] 518939: best r=0.02 at offset 20s (r at 0s = -0.02) station 440
+[GEO] 3515536: best r=0.06 at offset 28s (r at 0s = -0.02) station 440
+[GEO] 4048062: best r=0.08 at offset 6s (r at 0s = 0.00) station 440
+[GEO] 4053676: best r=0.17 at offset 8s (r at 0s = -0.05) station 440
+[GEO] 3823181: best r=0.09 at offset 6s (r at 0s = 0.04) station 440
+[GEO] 8026240: best r=0.06 at offset -2s (r at 0s = 0.00) station 2957
+[GEO] 3726491: best r=0.02 at offset 24s (r at 0s = -0.00) station 440
+[GEO] 3616313: best r=0.08 at offset 6s (r at 0s = 0.03) station 440
+[GEO] 3649745: best r=0.04 at offset 8s (r at 0s = 0.00) station 2011
+[GEO] 3145715: best r=0.09 at offset 16s (r at 0s = -0.00) station 1857
+[GEO] 3958819: best r=0.02 at offset 28s (r at 0s = -0.01) station 440
+[GEO] 4142288: best r=0.21 at offset 8s (r at 0s = -0.01) station 440
+[GEO] 3921429: best r=0.06 at offset 8s (r at 0s = 0.01) station 440
+[GEO] 4177417: best r=0.09 at offset 6s (r at 0s = -0.01) station 440
+[GEO] 3112261: best r=0.08 at offset 26s (r at 0s = 0.00) station 1857
+[GEO] 3642368: best r=0.02 at offset 28s (r at 0s = -0.03) station 440
+[GEO] 3690881: best r=0.05 at offset 4s (r at 0s = -0.03) station 440
+[GEO] 643769: best r=0.10 at offset 2s (r at 0s = 0.09) station 440
+[GEO] 693498: best r=0.11 at offset 4s (r at 0s = 0.04) station 440
+[GEO] 3864059: best r=0.03 at offset 28s (r at 0s = -0.06) station 440
+[GEO] 3475397: best r=0.06 at offset 8s (r at 0s = 0.01) station 440
+[GEO] 3565300: best r=0.03 at offset 22s (r at 0s = -0.04) station 440
+[GEO] 4011344: best r=0.04 at offset 4s (r at 0s = 0.01) station 440
+[GEO] 4091248: best r=0.04 at offset 26s (r at 0s = -0.06) station 440
+[GEO] 3777043: best r=0.00 at offset -2s (r at 0s = -0.03) station 440
+[GEO] 432515: best r=0.05 at offset 20s (r at 0s = 0.02) station 440
+[GEO] 3766187: best r=0.02 at offset 22s (r at 0s = -0.07) station 440
+[GEO] 9045366: best r=0.10 at offset 2s (r at 0s = 0.07) station 3413
+[GEO] 638411: best r=0.03 at offset 20s (r at 0s = -0.01) station 440
+
+[GEO] Summary: {'passes': 60, 'strong_matches': 6, 'median_offset_s': 8.0, 'per_station': {440: {'passes': 47, 'strong': 5, 'offsets': [6, 8, 4, 8, 8], 'median_offset_s': 8.0}, 893: {'passes': 1, 'strong': 0, 'offsets': [], 'median_offset_s': None}, 1857: {'passes': 3, 'strong': 0, 'offsets': [], 'median_offset_s': None}, 1874: {'passes': 1, 'strong': 0, 'offsets': [], 'median_offset_s': None}, 2011: {'passes': 2, 'strong': 0, 'offsets': [], 'median_offset_s': None}, 2957: {'passes': 2, 'strong': 0, 'offsets': [], 'median_offset_s': None}, 3413: {'passes': 3, 'strong': 0, 'offsets': [], 'median_offset_s': None}, 4254: {'passes': 1, 'strong': 1, 'offsets': [12], 'median_offset_s': 12.0}}}
