@@ -12,7 +12,6 @@ __pycache__/
 state/data/
 state/images/
 
-# Raw satellite images (2.8 GB) are distributed separately, not in git
-data/archive/raw/
+# SQLite temporary files
 data/archive/archive.db-shm
 data/archive/archive.db-wal
