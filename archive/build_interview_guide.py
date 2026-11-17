@@ -1,7 +1,7 @@
 """
 Short product guide and interview briefing.
 
-    python -m archive.build_interview_guide     # → ~/Downloads/TrailSky_How_It_Works.pdf
+    python -m archive.build_interview_guide     # → ~/Downloads/SummitSathi_How_It_Works.pdf
 """
 import json
 from pathlib import Path
@@ -16,7 +16,7 @@ import archive.build_submission_pdf as bs
 from archive.build_submission_pdf import P, bullets, table, figure, TEXT_W, MARGIN, PAGE_W, PAGE_H
 from archive.build_submission_pdf import MUTED, RULE, PANEL, FIG
 
-OUT = Path.home() / "Downloads" / "TrailSky_How_It_Works.pdf"
+OUT = Path.home() / "Downloads" / "SummitSathi_How_It_Works.pdf"
 DAY = json.loads((FIG / "prod_day_passes.json").read_text())
 
 
@@ -35,7 +35,7 @@ def on_page(canvas, doc):
     canvas.setStrokeColor(RULE); canvas.setLineWidth(0.5)
     canvas.line(MARGIN, PAGE_H - 13 * mm, PAGE_W - MARGIN, PAGE_H - 13 * mm)
     canvas.setFont("Helvetica", 7.8); canvas.setFillColor(MUTED)
-    canvas.drawString(MARGIN, PAGE_H - 11 * mm, "How TrailSky works")
+    canvas.drawString(MARGIN, PAGE_H - 11 * mm, "How SummitSathi works")
     canvas.drawRightString(PAGE_W - MARGIN, PAGE_H - 11 * mm, "Briefing · Meteor-M edition")
     canvas.drawCentredString(PAGE_W / 2, 10 * mm, str(doc.page))
     canvas.restoreState()
@@ -45,9 +45,9 @@ def story():
     bs.fig_no[0] = 0
     bs.tab_no[0] = 0
     good = [p["peak"] for p in DAY if p["max_el"] >= 30]
-    s = [P("How TrailSky works", "title"),
+    s = [P("How SummitSathi works", "title"),
          P("A short guide to the device, the hardware and the results", "subtitle"), Spacer(1, 6 * mm),
-         panel("<b>In 30 seconds.</b> TrailSky is a handheld device that gives trekkers weather warnings straight "
+         panel("<b>In 30 seconds.</b> SummitSathi is a handheld device that gives trekkers weather warnings straight "
                "from space, with no phone signal or internet. A small antenna catches the cloud images that "
                "Meteor-M weather satellites broadcast as they pass overhead. A Raspberry Pi computer inside turns "
                "those images into a <b>Climb Risk Score from 0 to 100</b>, with simple advice such as \"avoid exposed "
@@ -78,7 +78,7 @@ def story():
     for i, (h, t) in enumerate(steps, 1):
         s.append(P(f"<b>{i}. {h}</b> {t}", "bullet"))
     s += [figure("prod_01b_system_hw.png",
-                 "The parts of TrailSky. The top row catches the signal; the Raspberry Pi runs every software step "
+                 "The parts of SummitSathi. The top row catches the signal; the Raspberry Pi runs every software step "
                  "offline; the dashed boxes support it; the orange boxes are what the trekker sees.")]
 
     # ── 2 Hardware ────────────────────────────────────────────
@@ -99,7 +99,7 @@ def story():
                  ["Case", "220 × 130 × 42 mm, ≤680 g, polycarbonate with rubber bumper, aluminium heat spine",
                   "Rugged, light, carries on a backpack strap"],
                  ["Controls and ports", "Glove-friendly buttons; USB-C, USB-A, microSD", "Use in cold weather; charging and updates"]],
-                [0.17, 0.48, 0.35], "TrailSky hardware, from the product requirements."),
+                [0.17, 0.48, 0.35], "SummitSathi hardware, from the product requirements."),
           P("<b>Software.</b> Raspberry Pi OS Lite (64-bit) with a read-only system, so a sudden power cut cannot "
             "corrupt it. Every part runs as a service that restarts itself if it fails. Offline topographic maps "
             "(OpenTopoMap) and four screens: Home, Map, Satellite feed and Settings, plus a red night mode."),
@@ -111,17 +111,17 @@ def story():
                  ["Operating range", "−20 °C to +55 °C; up to 5,500 m altitude"]],
                 [0.4, 0.6], "Design targets. These are what the device is built to achieve; they have not yet been field-tested."),
           P("The design also includes an L-band antenna for the American GOES satellites (1,694 MHz). They cannot be "
-            "seen from India, so in India TrailSky uses the 137 MHz Meteor-M signal.")]
+            "seen from India, so in India SummitSathi uses the 137 MHz Meteor-M signal.")]
 
     # ── 3 Satellites ──────────────────────────────────────────
     s += [P("3. The satellites", "h1"),
-          P("TrailSky listens to <b>Meteor-M N2-3 and N2-4</b>, Russian weather satellites launched in 2023 and 2024. "
+          P("SummitSathi listens to <b>Meteor-M N2-3 and N2-4</b>, Russian weather satellites launched in 2023 and 2024. "
             "They orbit about 830 km up, pole to pole, circling the Earth about 14 times a day, and broadcast their "
             "images free to anyone. Their camera (MSU-MR) sees six wavelengths, from visible light to thermal infrared, "
             "at about 1 km per pixel across a 2,800 km-wide strip. The older NOAA satellites used in the research study "
             "stopped broadcasting in 2025."),
           P(f"<b>How often:</b> on a typical day over Manali there are {len(DAY)} passes, of which {len(good)} are good "
-            f"(around {', '.join(good)} IST). So TrailSky gets a clear look at the sky roughly every 6 hours. Each pass "
+            f"(around {', '.join(good)} IST). So SummitSathi gets a clear look at the sky roughly every 6 hours. Each pass "
             "lasts about 12 minutes.")]
 
     # ── 4 Results ─────────────────────────────────────────────
@@ -129,7 +129,7 @@ def story():
           P("I tested the method on real archived satellite images: 1,623 NOAA passes recorded by volunteer ground "
             "stations around India (2018–2025), matched with what 44 airports actually reported. The model trained on "
             "every year except 2019 and was then tested on 2019, which it had never seen."),
-          table([["Result (2019 test, 2,860 cases)", "TrailSky", "Local weather records"],
+          table([["Result (2019 test, 2,860 cases)", "SummitSathi", "Local weather records"],
                  ["Thunderstorm detection (AUC)", "0.90", "0.81"],
                  ["Rain in the next 3 hours (AUC)", "0.88", "0.68"],
                  ["Thunderstorms caught (hiker-safety setting)", "70% (192 of 273)", "—"],
@@ -151,7 +151,7 @@ def story():
                  ["46", "Measurements taken around the trekker"],
                  ["0–100", "Climb Risk Score range"],
                  ["11,156", "Real satellite observations used to test the method"],
-                 ["0.90 vs 0.81", "Thunderstorm detection: TrailSky vs local records"],
+                 ["0.90 vs 0.81", "Thunderstorm detection: SummitSathi vs local records"],
                  ["7 in 10", "Thunderstorms caught in testing"],
                  ["≥12 hours", "Battery life target"],
                  ["≤680 g", "Target weight"]],
@@ -159,18 +159,18 @@ def story():
 
     # ── 6 Q&A ─────────────────────────────────────────────────
     s += [P("6. Likely questions and short answers", "h1")]
-    s += [qa("What is TrailSky?", "A handheld device that gives trekkers weather warnings straight from weather "
+    s += [qa("What is SummitSathi?", "A handheld device that gives trekkers weather warnings straight from weather "
              "satellites, without phone signal or internet."),
           qa("Why did you build it?", "Storms are one of the biggest dangers on high trails, and that is exactly where "
              "phones and weather apps stop working. The satellites are overhead anyway, so I built a way to use them directly."),
           qa("How does it get weather with no internet?", "Weather satellites broadcast their pictures openly by radio. "
-             "TrailSky's antenna and radio catch that broadcast, and a small computer inside turns it into a warning."),
-          qa("Is it free and legal?", "Yes. The satellites broadcast to everyone at no cost, and TrailSky only receives; "
+             "SummitSathi's antenna and radio catch that broadcast, and a small computer inside turns it into a warning."),
+          qa("Is it free and legal?", "Yes. The satellites broadcast to everyone at no cost, and SummitSathi only receives; "
              "it never transmits anything."),
           qa("How accurate is it?", "In testing on more than 11,000 real satellite observations over India, it caught 7 "
              "out of 10 thunderstorms and spotted storms and rain clearly better than local weather records."),
           qa("How is it different from a weather app or a satellite messenger?", "Apps need a connection. Satellite "
-             "messengers send text forecasts. TrailSky looks at the actual clouds above you, on the device itself."),
+             "messengers send text forecasts. SummitSathi looks at the actual clouds above you, on the device itself."),
           qa("Who would use it?", "Trekkers, mountain guides, trekking companies, rescue teams and anyone heading where "
              "there is no signal."),
           qa("What was the hardest part?", "Real satellite data is messy. Many recordings were pure static, and my first "
@@ -197,7 +197,7 @@ def story():
 
 def build():
     doc = BaseDocTemplate(str(OUT), pagesize=A4, leftMargin=MARGIN, rightMargin=MARGIN, topMargin=20 * mm,
-                          bottomMargin=18 * mm, title="How TrailSky works", subject="Product briefing")
+                          bottomMargin=18 * mm, title="How SummitSathi works", subject="Product briefing")
     frame = Frame(MARGIN, 18 * mm, TEXT_W, PAGE_H - 38 * mm, id="body", leftPadding=0, rightPadding=0,
                   topPadding=0, bottomPadding=0)
     doc.addPageTemplates([PageTemplate(id="main", frames=[frame], onPage=on_page)])

@@ -1,4 +1,4 @@
-# TrailSky
+# SummitSathi
 
 A portable weather-satellite receiver for trekkers, plus the study that tested its storm warnings on
 real satellite data. This repository holds the complete project: all the code, from receiving a
@@ -19,18 +19,18 @@ reports and interview notes).
 | `logs/` | Logs from the full study run |
 | `docs/submission/` | IRIS final paper, synopsis, submission PDF, final video and video script |
 | `docs/reviews/` | IRIS reviewer feedback, rounds 1 and 2 |
-| `docs/reports/` | Archive study, figures book, "How TrailSky works" briefing |
+| `docs/reports/` | Archive study, figures book, "How SummitSathi works" briefing |
 | `docs/product/` | Product requirements (PRD), hardware requirements, flowcharts; older PRD versions |
 | `docs/presentations/` | Pitch deck and IRIS video decks |
 | `docs/data_workbooks/` | Excel workbooks with every data point (all years and the 2019 test) |
 | `docs/interview_prep/` | Plain-language explanation of the model, likely questions, jargon sheet |
 
-*Raw satellite images (separate download):* the 1,616 raw decoded satellite images (2.8 GB) are too large for GitHub. Download them from Google Drive: [TrailSky_Raw_Satellite_Images.zip](https://drive.google.com/file/d/1LcjnPJDYV605TM2i2ud9f2ZIxPlJwF6h/view?usp=sharing). Unzip the file inside the repository folder; it unpacks into `data/archive/raw/`. Everything else runs without them. To rebuild them from scratch instead, run steps 1–3 of the pipeline below.
+*Raw satellite images (separate download):* the 1,616 raw decoded satellite images (2.8 GB) are too large for GitHub. Download them from Google Drive: [SummitSathi_Raw_Satellite_Images.zip](https://drive.google.com/file/d/1LcjnPJDYV605TM2i2ud9f2ZIxPlJwF6h/view?usp=sharing). Unzip the file inside the repository folder; it unpacks into `data/archive/raw/`. Everything else runs without them. To rebuild them from scratch instead, run steps 1–3 of the pipeline below.
 
 ## Code layout
 
 ```
-TrailSky/
+SummitSathi/
 ├── README.md                 this guide
 ├── requirements.txt          Python packages and the exact versions used
 ├── config.py                 shared settings (folders, satellites, default GPS position)
@@ -79,7 +79,7 @@ straight away. Rerunning the pipeline re-creates all of them in `data/archive/`.
 ## Setup (once)
 
 ```bash
-cd TrailSky
+cd SummitSathi
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
@@ -136,8 +136,8 @@ The key is never printed or logged, and `.gitignore` keeps it out of version con
 | Airport reports and ERA5 | `data/archive/truth/` |
 | All results (metrics, predictions, models) | `data/archive/results/` |
 | Figures | `data/archive/results/figures/` |
-| Excel workbook | `data/archive/results/TrailSky_Archive_Data.xlsx` |
-| Submission PDF | `~/Downloads/TrailSky_IRIS_Submission.pdf` |
+| Excel workbook | `data/archive/results/SummitSathi_Archive_Data.xlsx` |
+| Submission PDF | `~/Downloads/SummitSathi_IRIS_Submission.pdf` |
 
 ### Running single steps
 
@@ -163,7 +163,7 @@ v3 model trained by step 9, the engine shows the calibrated Climb Risk Score.
 
 ## Main results (2019 test year, 2,860 cases the model never saw)
 
-| Hazard | TrailSky AUC | Local history AUC |
+| Hazard | SummitSathi AUC | Local history AUC |
 | --- | --- | --- |
 | Thunderstorm | 0.90 | 0.81 |
 | Rain within 3 hours | 0.88 | 0.68 |

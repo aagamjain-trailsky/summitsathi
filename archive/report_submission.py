@@ -103,7 +103,7 @@ def fig_algorithm():
     arrow(ax, 14.1, 2.9, 14.1, 5.35, color=GREY, ls="--")
     arrow(ax, 18.8, 5.35, 18.8, 2.95, color=ORANGE)
     ax.text(1.4, 2.1, "INPUTS", fontsize=7.5, weight="bold", color=MUTED, va="center", ha="center")
-    ax.text(0.3, 18.85, "TrailSky algorithm: from a satellite pass overhead to a Climb Risk Score",
+    ax.text(0.3, 18.85, "SummitSathi algorithm: from a satellite pass overhead to a Climb Risk Score",
             fontsize=14, color=INK, weight="bold")
     fig.savefig(FIG_DIR / "sub_01_algorithm.png", dpi=170)
     plt.close(fig)
@@ -272,7 +272,7 @@ EQUATIONS = {
     "eq_planck": r"$T \;=\; \dfrac{c_2\,\nu}{\ln\!\left(1 + \dfrac{c_1\,\nu^{3}}{R}\right)}$",
     "eq_auc": r"$\mathrm{AUC} \;=\; P\left(\,s_{\mathrm{hazard}} > s_{\mathrm{calm}}\,\right)$",
     "eq_brier": r"$B \;=\; \dfrac{1}{N}\sum_{i=1}^{N}\left(p_i - o_i\right)^{2}$",
-    "eq_skill": r"$\mathrm{Skill} \;=\; 1 - \dfrac{B_{\mathrm{TrailSky}}}{B_{\mathrm{history}}}$",
+    "eq_skill": r"$\mathrm{Skill} \;=\; 1 - \dfrac{B_{\mathrm{SummitSathi}}}{B_{\mathrm{history}}}$",
 }
 EQ_DPI = 300
 

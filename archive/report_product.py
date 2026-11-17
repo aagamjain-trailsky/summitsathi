@@ -1,5 +1,5 @@
 """
-Figures for the product explainer (Meteor-M LRPT version of TrailSky).
+Figures for the product explainer (Meteor-M LRPT version of SummitSathi).
 
     python -m archive.report_product <tle_file>   # → data/archive/results/figures/prod_*.png
 """
@@ -34,7 +34,7 @@ def read_tles(path):
 def fig_system():
     fig, ax = plt.subplots(figsize=(11, 7.4))
     ax.set_xlim(0, 22); ax.set_ylim(0, 14.8); ax.axis("off")
-    ax.text(0.3, 14.35, "Inside TrailSky: from the satellite overhead to the warning on screen",
+    ax.text(0.3, 14.35, "Inside SummitSathi: from the satellite overhead to the warning on screen",
             fontsize=14, weight="bold", color=INK)
     # sky
     box(ax, 0.6, 11.0, 5.6, 2.4, "Meteor-M satellite", ["~830 km up, 98.6° polar orbit", "MSU-MR camera, 6 channels",
@@ -181,7 +181,7 @@ if __name__ == "__main__":
 def fig_system_hw():
     fig, ax = plt.subplots(figsize=(11, 7.4))
     ax.set_xlim(0, 22); ax.set_ylim(0, 14.8); ax.axis("off")
-    ax.text(0.3, 14.35, "Inside TrailSky: the parts and what each one does", fontsize=14, weight="bold", color=INK)
+    ax.text(0.3, 14.35, "Inside SummitSathi: the parts and what each one does", fontsize=14, weight="bold", color=INK)
     box(ax, 0.6, 11.0, 5.6, 2.4, "Meteor-M satellite", ["~830 km up, polar orbit", "LRPT broadcast, 137 MHz"], "accent", 10.5)
     arrow(ax, 6.25, 12.2, 7.55, 12.2, color=ORANGE)
     box(ax, 7.6, 11.0, 4.0, 2.4, "Antenna", ["137 MHz V-dipole", "on a deployable", "rear mast"])

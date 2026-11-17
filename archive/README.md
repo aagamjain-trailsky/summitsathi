@@ -1,6 +1,6 @@
-# TrailSky archive study — real NOAA APT passes over India
+# SummitSathi archive study — real NOAA APT passes over India
 
-Runs the TrailSky analysis on real, archived NOAA-15/18/19 APT passes and
+Runs the SummitSathi analysis on real, archived NOAA-15/18/19 APT passes and
 scores it against observed weather.
 
 ## Pipeline

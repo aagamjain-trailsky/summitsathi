@@ -33,7 +33,7 @@ def get_recent_urls() -> list:
 
 def fetch_goes_image():
     headers = {
-        "User-Agent": "Mozilla/5.0 TrailSky/1.0",
+        "User-Agent": "Mozilla/5.0 SummitSathi/1.0",
         "Referer":    "https://www.star.nesdis.noaa.gov/"
     }
 

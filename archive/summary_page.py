@@ -44,7 +44,7 @@ sr = risk["safety_rules"]
 c1, c2 = cases[0], cases[1] if len(cases) > 1 else None
 top_th = [k for k, _ in th["top_features"][:6]]
 
-html = f"""<title>TrailSky Archive Study</title>
+html = f"""<title>SummitSathi Archive Study</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Source+Sans+3:wght@400;600&display=swap">
 <style>
@@ -96,7 +96,7 @@ footer {{ border-top: 1px solid var(--rule); padding-top: 16px; font: 14px/1.5 v
 <header>
   <div class="kicker">Student research project · Weather-satellite hazard warnings for trekkers in India</div>
   <h1>Can a portable weather-satellite receiver warn trekkers of storms?</h1>
-  <p class="measure abstract">We ran the TrailSky alert system on <strong>{m['n_samples']:,} real satellite–weather matches</strong>:
+  <p class="measure abstract">We ran the SummitSathi alert system on <strong>{m['n_samples']:,} real satellite–weather matches</strong>:
   archived NOAA-15/18/19 APT images received by ground stations in India (2018–2025), each compared with what
   the nearest airport actually reported. Every result below comes from years the model never saw during training.</p>
 </header>
@@ -112,7 +112,7 @@ footer {{ border-top: 1px solid var(--rule); padding-top: 16px; font: 14px/1.5 v
 
 <section class="measure">
   <h2>Question</h2>
-  <p>TrailSky receives weather-satellite images on a portable radio and turns them into storm alerts for people on
+  <p>SummitSathi receives weather-satellite images on a portable radio and turns them into storm alerts for people on
   mountain trails. The original version was tuned on simulated images. Does it work on real satellite data, and
   does the satellite tell a trekker anything beyond the usual weather for that place and season?</p>
 </section>
@@ -222,7 +222,7 @@ footer {{ border-top: 1px solid var(--rule); padding-top: 16px; font: 14px/1.5 v
 </section>
 
 <footer class="measure">Data: SatNOGS Network (CC BY-SA), Iowa Environmental Mesonet METAR archive, ERA5 via Open-Meteo,
-Natural Earth. Code and full results: <code>trailsky/archive/</code> — <code>metrics_v3.json</code>,
+Natural Earth. Code and full results: <code>summitsathi/archive/</code> — <code>metrics_v3.json</code>,
 <code>risk_v3.json</code>, <code>samples.csv</code>. All configurations tried are recorded in the results files.</footer>
 </main>
 """

@@ -1,7 +1,7 @@
 """
 Score the alert logic against what the weather actually did.
 
-  v1  — the original TrailSky thresholds, unchanged
+  v1  — the original SummitSathi thresholds, unchanged
   v2  — thresholds / logistic model fitted on cloud-top temperature,
         trained on passes before SPLIT_DATE, tested on passes after it
   climatology — rate of the event for that location and month (baseline)

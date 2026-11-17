@@ -1,7 +1,7 @@
 """
-Builds the product guide: how TrailSky works end to end (Meteor-M edition).
+Builds the product guide: how SummitSathi works end to end (Meteor-M edition).
 
-    python -m archive.build_product_guide      # → ~/Downloads/TrailSky_How_It_Works.pdf
+    python -m archive.build_product_guide      # → ~/Downloads/SummitSathi_How_It_Works.pdf
 """
 import json
 from pathlib import Path
@@ -16,7 +16,7 @@ import archive.build_submission_pdf as bs
 from archive.build_submission_pdf import P, bullets, table, figure, Placeholder, TEXT_W, MARGIN, PAGE_W, PAGE_H
 from archive.build_submission_pdf import MUTED, RULE, PANEL, FIG
 
-OUT = Path.home() / "Downloads" / "TrailSky_How_It_Works.pdf"
+OUT = Path.home() / "Downloads" / "SummitSathi_How_It_Works.pdf"
 PASS = json.loads((FIG / "prod_pass.json").read_text())
 DAY = json.loads((FIG / "prod_day_passes.json").read_text())
 
@@ -41,7 +41,7 @@ def on_page(canvas, doc):
     canvas.setStrokeColor(RULE); canvas.setLineWidth(0.5)
     canvas.line(MARGIN, PAGE_H - 13 * mm, PAGE_W - MARGIN, PAGE_H - 13 * mm)
     canvas.setFont("Helvetica", 7.8); canvas.setFillColor(MUTED)
-    canvas.drawString(MARGIN, PAGE_H - 11 * mm, "How TrailSky works")
+    canvas.drawString(MARGIN, PAGE_H - 11 * mm, "How SummitSathi works")
     canvas.drawRightString(PAGE_W - MARGIN, PAGE_H - 11 * mm, "Product guide · Meteor-M edition")
     canvas.drawCentredString(PAGE_W / 2, 10 * mm, str(doc.page))
     canvas.restoreState()
@@ -51,12 +51,12 @@ def story():
     bs.fig_no[0] = 0
     bs.tab_no[0] = 0
     good = [p for p in DAY if p["max_el"] >= 30]
-    s = [Spacer(1, 30 * mm), P("How TrailSky works", "title"), Spacer(1, 3 * mm),
+    s = [Spacer(1, 30 * mm), P("How SummitSathi works", "title"), Spacer(1, 3 * mm),
          P("A complete guide to the product, from the weather satellite overhead to the warning on the screen. "
            "Meteor-M edition.", "subtitle"), Spacer(1, 10 * mm),
-         Placeholder("TrailSky device with antenna deployed", "Photo of the receiver in use outdoors", 80 * mm),
+         Placeholder("SummitSathi device with antenna deployed", "Photo of the receiver in use outdoors", 80 * mm),
          Spacer(1, 8 * mm),
-         panel("<b>In one paragraph.</b> TrailSky listens for Russia's Meteor-M weather satellites as they pass "
+         panel("<b>In one paragraph.</b> SummitSathi listens for Russia's Meteor-M weather satellites as they pass "
                "overhead. Its antenna and radio record the satellite's digital LRPT broadcast at 137 MHz for about "
                "12 minutes. The on-board computer turns that signal back into cloud images, converts the images "
                "into cloud-top temperatures, places them on the map, and measures the clouds around the trekker's "
@@ -66,7 +66,7 @@ def story():
 
     # ── 1 Big picture ─────────────────────────────────────────
     s += [P("1. The big picture", "h1"),
-          P("TrailSky does three jobs, one after another: it <b>receives</b> a satellite broadcast, it <b>decodes</b> "
+          P("SummitSathi does three jobs, one after another: it <b>receives</b> a satellite broadcast, it <b>decodes</b> "
             "that broadcast back into images, and it <b>interprets</b> the images into a warning. Figure 1 shows "
             "every part involved, from the satellite to the screen."),
           figure("prod_01_system.png",
@@ -79,7 +79,7 @@ def story():
 
     # ── 2 Satellites ──────────────────────────────────────────
     s += [P("2. Where the data comes from: the Meteor-M satellites", "h1"),
-          P("TrailSky currently receives <b>Meteor-M N2-3</b> and <b>Meteor-M N2-4</b>, Russian polar-orbiting weather "
+          P("SummitSathi currently receives <b>Meteor-M N2-3</b> and <b>Meteor-M N2-4</b>, Russian polar-orbiting weather "
             "satellites launched in 2023 and 2024. They broadcast their images openly, free of charge and without "
             "encryption, so anyone with a suitable antenna and receiver can pick them up."),
           P("2.1 The orbit", "h2"),
@@ -95,12 +95,12 @@ def story():
                 "noisy."),
           P(f"On this example day the good passes come at about {', '.join(p['peak'] for p in good)} IST, roughly "
             "one every five and a half to seven hours. That spacing is the single most important limit of the product: "
-            "TrailSky sees the sky as a series of snapshots, and a storm that builds between two snapshots can be missed."),
+            "SummitSathi sees the sky as a series of snapshots, and a storm that builds between two snapshots can be missed."),
           P("2.2 The camera on board: MSU-MR", "h2"),
           P("Each satellite carries a scanning radiometer called MSU-MR. A rotating mirror sweeps across the ground "
             "from side to side while the satellite moves forward, so the image is built up one line at a time, "
             "about 2,800 km wide and about 1 km per pixel directly below the satellite. It measures six wavelengths:"),
-          table([["Channel", "Wavelength (µm)", "What it sees", "Use in TrailSky"],
+          table([["Channel", "Wavelength (µm)", "What it sees", "Use in SummitSathi"],
                  ["1", "0.5–0.7", "Visible light (daytime only)", "Cloud brightness: thick storm cloud vs thin cloud"],
                  ["2", "0.7–1.1", "Near infrared (daytime only)", "Land, water and cloud contrast"],
                  ["3", "1.6–1.8", "Short-wave infrared (daytime only)", "Telling snow and ice from cloud"],
@@ -159,7 +159,7 @@ def story():
                   "A trek has no mains power; the radio and computer run for every pass"],
                  ["Enclosure", "Protects the electronics from rain, dust and drops; shields the radio",
                   "The computer's own electronics create noise that can interfere with the weak signal"]],
-                [0.22, 0.34, 0.44], "Each part of TrailSky and its job."),
+                [0.22, 0.34, 0.44], "Each part of SummitSathi and its job."),
           Placeholder("Inside the device, parts labelled", "Antenna connector, filter/LNA, SDR, computer, GPS, battery", 70 * mm),
           Placeholder("Antenna deployed", "The 137 MHz antenna in its operating position", 55 * mm)]
 
@@ -308,7 +308,7 @@ def story():
 
     # ── 6 Study vs product ────────────────────────────────────
     s += [P("6. What the study proved, and what Meteor-M changes", "h1"),
-          P("The research study tested TrailSky's method on 1,425 archived <b>NOAA APT</b> passes over India. On a "
+          P("The research study tested SummitSathi's method on 1,425 archived <b>NOAA APT</b> passes over India. On a "
             "year it never saw (2019), it detected thunderstorms with an AUC of 0.90 against 0.81 for local weather "
             "history, and its Climb Risk bands matched reality. Moving to Meteor-M keeps the method but changes the "
             "input, so the steps divide into three groups:"),
@@ -339,7 +339,7 @@ def story():
         "<b>Infrared sees cloud tops, not the ground.</b> Fog is detected only at night, and rain under thin cloud can be missed.",
         "<b>Orbit data ages.</b> Orbital elements should be refreshed every week or two for accurate pass timing.",
         "<b>A decision aid, not a guarantee.</b> In testing about 3 in 10 thunderstorms were missed, and many alerts "
-        "were false alarms by design. TrailSky supports a trekker's judgement; it does not replace it."])
+        "were false alarms by design. SummitSathi supports a trekker's judgement; it does not replace it."])
 
     # ── 8 Glossary ────────────────────────────────────────────
     s += [P("8. Glossary", "h1"),
@@ -366,7 +366,7 @@ def story():
 
 def build():
     doc = BaseDocTemplate(str(OUT), pagesize=A4, leftMargin=MARGIN, rightMargin=MARGIN, topMargin=20 * mm,
-                          bottomMargin=18 * mm, title="How TrailSky works", subject="Product guide, Meteor-M edition")
+                          bottomMargin=18 * mm, title="How SummitSathi works", subject="Product guide, Meteor-M edition")
     frame = Frame(MARGIN, 18 * mm, TEXT_W, PAGE_H - 38 * mm, id="body", leftPadding=0, rightPadding=0,
                   topPadding=0, bottomPadding=0)
     doc.addPageTemplates([PageTemplate(id="main", frames=[frame], onPage=on_page)])

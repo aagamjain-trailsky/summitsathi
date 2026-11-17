@@ -176,7 +176,7 @@ def fig_flowchart():
         if i < len(steps) - 1:
             ax.annotate("", xy=(5, y - 0.79), xytext=(5, y - 0.45),
                         arrowprops=dict(arrowstyle="-|>", color=MUTED, lw=1.2))
-    ax.set_title("TrailSky: from satellite signal to Climb Risk Score", fontsize=13, color=INK, loc="left")
+    ax.set_title("SummitSathi: from satellite signal to Climb Risk Score", fontsize=13, color=INK, loc="left")
     fig.savefig(FIG_DIR / "iris_6_algorithm_flowchart.png")
     plt.close(fig)
 

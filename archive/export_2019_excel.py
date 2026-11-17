@@ -3,7 +3,7 @@ Excel workbook with only the 2019 test year: every prediction, its outcome
 (correct alert, false positive, false negative, correct quiet), the Climb Risk
 Score, and the 2019 samples.
 
-    python -m archive.export_2019_excel   # → data/archive/results/TrailSky_2019_Test_Data.xlsx
+    python -m archive.export_2019_excel   # → data/archive/results/SummitSathi_2019_Test_Data.xlsx
 """
 import json
 import sqlite3
@@ -25,7 +25,7 @@ from archive.export_excel import (header, title, write_table, F_BODY, F_HEAD, F_
                                   FILL_HEAD, PCT, DEC2, DEC1, INT)
 from archive.truth import locations
 
-OUT = RESULTS_DIR / "TrailSky_2019_Test_Data.xlsx"
+OUT = RESULTS_DIR / "SummitSathi_2019_Test_Data.xlsx"
 GROUP = "2018-2019"
 HAZARDS = [("thunder_now", "Thunderstorm now"), ("rain_next3h", "Rain within 3 hours"),
            ("rain_now", "Rain now"), ("fog_now", "Fog now")]
@@ -74,26 +74,26 @@ def main():
     # ── Read Me ───────────────────────────────────────────────
     ws = wb.active
     ws.title = "Read Me"
-    title(ws, "TrailSky — 2019 test year only",
+    title(ws, "SummitSathi — 2019 test year only",
           "The model was trained on 2020–2025 (2020 also used for tuning) and tested once on these 2019 cases.")
     rows = [
         ("Sheet", "What it contains"),
         ("Summary", "Results per hazard. Alert thresholds are inputs (blue); the counts of correct alerts, false "
                     "positives, false negatives and correct quiets are formulas over 'Hazard Predictions'."),
-        ("Hazard Predictions", "All 2,860 test cases: TrailSky's probability for each hazard, whether it alerted "
+        ("Hazard Predictions", "All 2,860 test cases: SummitSathi's probability for each hazard, whether it alerted "
                                "(formula), what the airport reported (1/0) and the outcome (formula)."),
         ("Risk Predictions", "The Climb Risk Score for each 2019 case, its band (formula) and whether a hazard was reported."),
         ("Risk Bands", "Cases, hazards and hazard rate per band (formulas), with the false negatives and false positives."),
         ("Calibration", "Score given against hazard rate, in 10-point bins (formulas)."),
         ("Samples 2019", "Every 2019 satellite–weather match with all satellite measurements and the airport report."),
         ("", ""),
-        ("Correct alert", "TrailSky alerted and the hazard was reported (true positive)."),
-        ("False positive", "TrailSky alerted but no hazard was reported (false alarm)."),
-        ("False negative", "A hazard was reported but TrailSky did not alert (missed)."),
+        ("Correct alert", "SummitSathi alerted and the hazard was reported (true positive)."),
+        ("False positive", "SummitSathi alerted but no hazard was reported (false alarm)."),
+        ("False negative", "A hazard was reported but SummitSathi did not alert (missed)."),
         ("Correct quiet", "No alert and no hazard (true negative)."),
         ("Hiker-safety setting", "Alert threshold chosen on 2020 data to miss as few hazards as possible."),
         ("Balanced setting", "Alert threshold chosen on 2020 data to balance catches and false alarms."),
-        ("AUC", "Chance that TrailSky scores a real hazard above a calm moment; 0.5 = coin toss, 1.0 = perfect."),
+        ("AUC", "Chance that SummitSathi scores a real hazard above a calm moment; 0.5 = coin toss, 1.0 = perfect."),
         ("", ""),
         ("Colour key", "Blue = inputs you can change. Green = formulas reading another sheet. Black = study values."),
         ("Calculation", "Formulas recalculate when opened in Excel (click Enable Editing if asked)."),
@@ -143,7 +143,7 @@ def main():
           "AUC values come from the study (metrics_v3.json).")
     hdr = ["Hazard", "Test cases", "Alert threshold (probability)", "Balanced threshold (reference)",
            "Reported hazards", "Correct alerts", "False positives", "False negatives", "Correct quiets",
-           "Caught (correct ÷ reported)", "Alerts correct (correct ÷ alerts)", "TrailSky AUC",
+           "Caught (correct ÷ reported)", "Alerts correct (correct ÷ alerts)", "SummitSathi AUC",
            "Local history AUC", "Satellite-only AUC"]
     header(wsum, 5, hdr, [20, 10, 14, 14, 11, 11, 11, 11, 11, 13, 14, 10, 11, 11])
     for h, (ev, name) in enumerate(HAZARDS):
@@ -163,7 +163,7 @@ def main():
             cell.font = F_INPUT if c == 3 else F_LINK if isinstance(v, str) and v.startswith("=") else F_BODY
             if f:
                 cell.number_format = f
-    wsum["A11"] = ("Thunderstorm example: of the reported thunderstorms, 'Caught' is the share TrailSky alerted on; "
+    wsum["A11"] = ("Thunderstorm example: of the reported thunderstorms, 'Caught' is the share SummitSathi alerted on; "
                    "'False negatives' are the ones it missed; 'False positives' are alerts with no storm.")
     wsum["A11"].font = F_NOTE
     wsum.freeze_panes = "B6"

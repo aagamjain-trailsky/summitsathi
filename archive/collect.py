@@ -34,7 +34,7 @@ END_UTC = "2025-08-31T00:00:00Z"
 SCREEN_N = 6
 SIGNAL_SCORE = 5.0
 
-HEADERS = {"User-Agent": "TrailSky-research/1.0 (student science project)"}
+HEADERS = {"User-Agent": "SummitSathi-research/1.0 (student science project)"}
 
 # Optional SatNOGS API key for higher rate limits. Kept in a private file
 # (chmod 600) and never printed or logged.

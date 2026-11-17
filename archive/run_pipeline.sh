@@ -1,5 +1,5 @@
 #!/bin/sh
-# Full TrailSky archive study, top to bottom. Every step is resumable.
+# Full SummitSathi archive study, top to bottom. Every step is resumable.
 #   nohup sh archive/run_pipeline.sh > logs/pipeline.log 2>&1 &
 #   SKIP_CRAWL=1 sh archive/run_pipeline.sh   # use only passes already found
 cd "$(dirname "$0")/.." || exit 1

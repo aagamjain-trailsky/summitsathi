@@ -72,7 +72,7 @@ def stream_output(proc, name, colour):
     return t
 
 def shutdown(sig=None, frame=None):
-    print(f"\n\n  {RED}Shutting down TrailSky...{RESET}")
+    print(f"\n\n  {RED}Shutting down SummitSathi...{RESET}")
     for p in processes:
         try:
             p.terminate()

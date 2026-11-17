@@ -1,10 +1,10 @@
-# TrailSky Model — Interview Prep
+# SummitSathi Model — Interview Prep
 
 ## Start here: the idea in plain words
 
 **The problem.** Trekkers in the mountains have no phone signal, so they can't check the weather. Storms are one of the biggest dangers up there.
 
-**The idea.** Weather satellites fly overhead all day and broadcast cloud pictures by radio, free, to anyone. A small device with an antenna can catch those pictures. TrailSky's model looks at the picture and answers one question:
+**The idea.** Weather satellites fly overhead all day and broadcast cloud pictures by radio, free, to anyone. A small device with an antenna can catch those pictures. SummitSathi's model looks at the picture and answers one question:
 
 > **"How likely is bad weather where I'm standing right now?"**
 
@@ -50,7 +50,7 @@ Think of it as a box: a satellite picture and your location go in; a risk score 
 
 ## How it works, step by step
 
-![TrailSky model pipeline](pipeline_diagram.png)
+![SummitSathi model pipeline](pipeline_diagram.png)
 
 The top row of the picture is about **getting a clean, readable picture**. The bottom row is about **turning that picture into a score**.
 
@@ -103,7 +103,7 @@ I tested the model like an exam: it learned from some years, then was tested on 
 
 **Results on 2019**
 
-| Bad weather | TrailSky score | "What usually happens" score | Caught at safety setting |
+| Bad weather | SummitSathi score | "What usually happens" score | Caught at safety setting |
 | --- | --- | --- | --- |
 | Thunderstorm now | 0.90 | 0.81 | 70% (192 of 273) |
 | Rain in the next 3 hours | 0.88 | 0.68 | 69% |

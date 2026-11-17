@@ -26,7 +26,7 @@ from archive.db import ARCHIVE_DIR
 
 TRUTH_DIR = ARCHIVE_DIR / "truth"
 TRUTH_DIR.mkdir(parents=True, exist_ok=True)
-HEADERS = {"User-Agent": "TrailSky-research/1.0 (student science project)"}
+HEADERS = {"User-Agent": "SummitSathi-research/1.0 (student science project)"}
 
 # Mountains / trekking regions first, then a spread of climate zones
 LOCATION_IDS = [

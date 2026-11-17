@@ -1,7 +1,7 @@
 """
 Builds the IRIS submission PDF with figures placed in their sections.
 
-    python -m archive.build_submission_pdf      # → ~/Downloads/TrailSky_IRIS_Submission.pdf
+    python -m archive.build_submission_pdf      # → ~/Downloads/SummitSathi_IRIS_Submission.pdf
 """
 from pathlib import Path
 import sys
@@ -17,7 +17,7 @@ from reportlab.platypus import (BaseDocTemplate, PageTemplate, Frame, Paragraph,
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 FIG = Path(__file__).parent.parent / "data" / "archive" / "results" / "figures"
-OUT = Path.home() / "Downloads" / "TrailSky_IRIS_Submission.pdf"
+OUT = Path.home() / "Downloads" / "SummitSathi_IRIS_Submission.pdf"
 
 NAVY, INK, MUTED, RULE = HexColor("#0A2540"), HexColor("#333333"), HexColor("#5E6369"), HexColor("#D9DCE0")
 ORANGE, PANEL = HexColor("#E85D26"), HexColor("#F5F5F5")
@@ -122,7 +122,7 @@ def on_page(canvas, doc):
     canvas.setStrokeColor(RULE); canvas.setLineWidth(0.5)
     canvas.line(MARGIN, PAGE_H - 13 * mm, PAGE_W - MARGIN, PAGE_H - 13 * mm)
     canvas.setFont("Helvetica", 7.8); canvas.setFillColor(MUTED)
-    canvas.drawString(MARGIN, PAGE_H - 11 * mm, "TrailSky: satellite storm warnings for trekkers")
+    canvas.drawString(MARGIN, PAGE_H - 11 * mm, "SummitSathi: satellite storm warnings for trekkers")
     canvas.drawRightString(PAGE_W - MARGIN, PAGE_H - 11 * mm, "IRIS National Fair submission")
     canvas.drawCentredString(PAGE_W / 2, 10 * mm, str(doc.page))
     canvas.restoreState()
@@ -131,13 +131,13 @@ def on_page(canvas, doc):
 def story():
     s = []
     # ── Title page ────────────────────────────────────────────
-    s += [Spacer(1, 28 * mm), P("TrailSky", "title"), Spacer(1, 3 * mm),
+    s += [Spacer(1, 28 * mm), P("SummitSathi", "title"), Spacer(1, 3 * mm),
           P("Can a portable weather-satellite receiver warn trekkers of storms? "
             "A test on 11,156 real satellite–weather matches over India", "subtitle"),
           Spacer(1, 8 * mm),
           P("[Student name] · [School] · IRIS National Fair · [Category]", "meta"),
           P("October 2026", "meta"), Spacer(1, 12 * mm),
-          Placeholder("TrailSky device, front view", "Hero photo of the handheld receiver, screen on", 85 * mm),
+          Placeholder("SummitSathi device, front view", "Hero photo of the handheld receiver, screen on", 85 * mm),
           Spacer(1, 6 * mm)]
     s += [Table([[P("<b>Key results on a test year the model never saw (2019, 2,860 cases)</b><br/>"
                     "Thunderstorm detection AUC <b>0.90</b>, against 0.81 for local weather history · "
@@ -152,7 +152,7 @@ def story():
     # ── 1 Abstract ────────────────────────────────────────────
     s += [P("1. Abstract", "h1"),
           P("Trekkers in the Himalaya and the Western Ghats are often caught by storms where there is no phone "
-            "signal and no weather station. TrailSky is a handheld receiver that picks up images directly from "
+            "signal and no weather station. SummitSathi is a handheld receiver that picks up images directly from "
             "polar-orbiting weather satellites and turns them into a 0–100 Climb Risk Score. Its first version "
             "was tuned on simulated images. This project asks whether it works on real data, and whether the "
             "satellite adds anything to what a trekker could know from the usual weather for that place and "
@@ -163,7 +163,7 @@ def story():
             "airports. This produced 11,156 satellite–weather matches, each compared with what the airport "
             "actually reported. Gradient-boosted tree models were trained on every year except 2019 and then "
             "tested once on 2019.", "abstract"),
-          P("On the 2,860 test cases, TrailSky detected thunderstorms with an AUC of 0.90 against 0.81 for local "
+          P("On the 2,860 test cases, SummitSathi detected thunderstorms with an AUC of 0.90 against 0.81 for local "
             "history, and rain within three hours with 0.88 against 0.68. At its hiker-safety setting it caught "
             "70% of thunderstorms. Its Climb Risk Score proved honest: a hazard followed in 3% of Minimal cases "
             "and 74% of Extreme cases. The satellite adds real information for storms and rain; fog is predicted "
@@ -179,7 +179,7 @@ def story():
             "Shimla had far fewer weather reports than the cities."),
           P("Weather satellites, however, pass overhead several times a day and broadcast their images openly on "
             "137 MHz. A small antenna and radio can receive them anywhere with a view of the sky, with no "
-            "subscription and no signal. TrailSky is built on that idea."),
+            "subscription and no signal. SummitSathi is built on that idea."),
           P("Research question", "h2"),
           P("Can cloud images received directly from a weather satellite warn a trekker of a thunderstorm, rain or "
             "fog better than knowing the usual weather for that place, month and time of day?"),
@@ -196,8 +196,8 @@ def story():
         "An honest account of what failed: the original thresholds caught none of 37 thunderstorms on real data."])
 
     # ── 3 The device ──────────────────────────────────────────
-    s += [P("3. The TrailSky device", "h1"),
-          P("TrailSky is a handheld unit with four main parts: a 137 MHz antenna, a software-defined radio "
+    s += [P("3. The SummitSathi device", "h1"),
+          P("SummitSathi is a handheld unit with four main parts: a 137 MHz antenna, a software-defined radio "
             "receiver, a small on-board computer, and a GPS receiver with a screen. The whole algorithm described "
             "in this report runs on the device itself. It needs no internet; orbit data for predicting passes is "
             "refreshed whenever a connection is available, for example at the trailhead."),
@@ -215,8 +215,8 @@ def story():
           Placeholder("Inside the device", "Labelled photo of the antenna, radio, computer, GPS and battery", 70 * mm),
           Placeholder("Climb Risk Score screen", "Screen showing score, band, advice and reasons", 70 * mm)]
 
-    # ── 4 How TrailSky works ──────────────────────────────────
-    s += [P("4. How TrailSky works", "h1"),
+    # ── 4 How SummitSathi works ──────────────────────────────────
+    s += [P("4. How SummitSathi works", "h1"),
           P("Every pass goes through the same chain of sixteen steps in four stages (Figure 1). Stage 1 predicts "
             "when the next satellite will pass, records its signal and turns the audio into image lines. Stage 2 "
             "cleans those lines and converts brightness into a physical quantity, the temperature of the cloud "
@@ -224,7 +224,7 @@ def story():
             "trekker. Stage 4 turns those measurements into hazard probabilities, a calibrated Climb Risk Score "
             "and a short piece of advice."),
           figure("sub_01_algorithm.png",
-                 "The TrailSky algorithm. Each row is one stage; arrows show the order of processing. The dashed boxes "
+                 "The SummitSathi algorithm. Each row is one stage; arrows show the order of processing. The dashed boxes "
                  "at the bottom are extra inputs: the airport's long-term weather history, the previous satellite "
                  "pass (used to measure whether clouds are growing), and the real data the models were trained on. "
                  "The orange box is what the trekker sees. A pass is processed from recording to warning in the "
@@ -364,7 +364,7 @@ def story():
           equation("eq_brier.png", 4, 13 * mm),
           equation("eq_skill.png", 5, 12 * mm),
           P("The baseline in every comparison is the airport's own hazard frequency for that month and three-hour "
-            "time block, built from all reports outside the test year. TrailSky has to beat it to show that the "
+            "time block, built from all reports outside the test year. SummitSathi has to beat it to show that the "
             "satellite adds information.")]
 
     # ── 7 Development ─────────────────────────────────────────
@@ -417,10 +417,10 @@ def story():
           figure("iris_1_test2019_detection.png",
                  "Detection on the 2019 test year. Each panel plots, for every possible alert threshold, the share of "
                  "real events caught (up) against the share of calm moments wrongly alerted (right). A curve closer to "
-                 "the top-left corner is better; the faint diagonal is guessing. Solid navy is TrailSky v3, dashed grey "
-                 "is the airport's weather history. TrailSky is clearly better for thunderstorms and both rain targets; "
+                 "the top-left corner is better; the faint diagonal is guessing. Solid navy is SummitSathi v3, dashed grey "
+                 "is the airport's weather history. SummitSathi is clearly better for thunderstorms and both rain targets; "
                  "for fog the two curves lie on top of each other."),
-          table([["Hazard", "Cases", "TrailSky AUC", "Local history AUC", "Caught (safety)", "Alerts correct (safety)",
+          table([["Hazard", "Cases", "SummitSathi AUC", "Local history AUC", "Caught (safety)", "Alerts correct (safety)",
                   "Caught (balanced)", "Alerts correct (balanced)"],
                  ["Thunderstorm now", "273", "<b>0.90</b>", "0.81", "70%", "40%", "54%", "54%"],
                  ["Rain within 3 hours", "114", "<b>0.88</b>", "0.68", "69%", "17%", "40%", "21%"],
@@ -438,7 +438,7 @@ def story():
             "thunderstorms, and 40% of its alerts are followed by a reported storm. That is four times better than "
             "random alerts, which would be right 10% of the time. The balanced setting raises fewer false alarms "
             "but misses more storms. For a trekker on a ridge a missed storm costs far more than an unnecessary "
-            "turn-back, so TrailSky uses the safety setting."),
+            "turn-back, so SummitSathi uses the safety setting."),
           figure("sub_05_tradeoff_2019.png",
                  "The thunderstorm alert trade-off on 2019. The curve shows every possible threshold: further right "
                  "catches more storms, higher up means more alerts are correct. The orange point is the hiker-safety "
@@ -496,7 +496,7 @@ def story():
             "software removed."),
           figure("5_case_1_caught_VEBS.png",
                  "Caught: Bhubaneswar, 17 August 2023, 10:30 IST, NOAA-18. A large storm system covers the airport, "
-                 "with the nearest storm cloud 3 km away and cloud tops at −82 °C. TrailSky gave the maximum Climb Risk "
+                 "with the nearest storm cloud 3 km away and cloud tops at −82 °C. SummitSathi gave the maximum Climb Risk "
                  "Score (Extreme), and the airport reported a thunderstorm with rain.", 0.75 * TEXT_W),
           figure("5_case_2_missed_VOCI.png",
                  "Missed: Kochi, 15 August 2025, 19:04 IST, NOAA-15. Storm cells are visible, but the nearest was 99 km "
@@ -511,7 +511,7 @@ def story():
             "infrared channels. The antenna, radio and most of this method carry over; the decoder and calibration "
             "step change, and the models would be retrained on archived Meteor-M passes."),
           P("12.2 Use by trekking companies and rescue teams", "h2"),
-          table([["User", "How they would use TrailSky", "What it changes"],
+          table([["User", "How they would use SummitSathi", "What it changes"],
                  ["Trek leaders and guides", "Check the Climb Risk Score at each pass before summit day or a high crossing",
                   "Go/no-go calls backed by a satellite view, not only experience"],
                  ["Trekking companies", "One device per group, with company rules such as turning back at High",
@@ -522,14 +522,14 @@ def story():
                   "Safer timing of operations"],
                  ["Pilgrimage and park authorities", "Fixed units at base camps on busy high routes",
                   "Warnings for many people where coverage is poor"]],
-                [0.24, 0.42, 0.34], "How organisations could use TrailSky."),
-          Placeholder("TrailSky in use on a trail", "Photo of a guide checking the device before a crossing", 65 * mm),
+                [0.24, 0.42, 0.34], "How organisations could use SummitSathi."),
+          Placeholder("SummitSathi in use on a trail", "Photo of a guide checking the device before a crossing", 65 * mm),
           P("12.3 Improving the model", "h2")]
     s += bullets([
         "<b>Better rain truth</b> from satellite rainfall estimates (for example NASA's GPM, every 30 minutes on a "
         "10 km grid), covering mountains with no airport.",
         "<b>Lightning data</b> to check thunderstorm warnings directly.",
-        "<b>Field feedback:</b> every TrailSky trek logs its predictions; guides marking what actually happened would "
+        "<b>Field feedback:</b> every SummitSathi trek logs its predictions; guides marking what actually happened would "
         "add the mountain data that airports cannot provide.",
         "<b>Route-aware warnings</b> that score the whole planned route, so a group knows which pass to cross first."])
 
@@ -555,7 +555,7 @@ def story():
             "failed on real data. The rebuilt system, tested on a year it never saw, detected thunderstorms and rain "
             "clearly better than local weather history, and its risk score proved honest across its range. The "
             "satellite adds real information exactly where trekkers need it most: storms and rain, in places with "
-            "no signal. TrailSky cannot guarantee safety, but it gives a trekker a measured, satellite-based view "
+            "no signal. SummitSathi cannot guarantee safety, but it gives a trekker a measured, satellite-based view "
             "of the sky overhead to support their own judgement.")]
 
     # ── 15 References ─────────────────────────────────────────
@@ -574,7 +574,7 @@ def story():
 def build():
     doc = BaseDocTemplate(str(OUT), pagesize=A4, leftMargin=MARGIN, rightMargin=MARGIN,
                           topMargin=20 * mm, bottomMargin=18 * mm,
-                          title="TrailSky: satellite storm warnings for trekkers",
+                          title="SummitSathi: satellite storm warnings for trekkers",
                           subject="IRIS National Fair submission")
     frame = Frame(MARGIN, 18 * mm, TEXT_W, PAGE_H - 38 * mm, id="body", leftPadding=0, rightPadding=0,
                   topPadding=0, bottomPadding=0)

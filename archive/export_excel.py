@@ -1,7 +1,7 @@
 """
 Export every result and every data point to one Excel workbook.
 
-    python -m archive.export_excel        # → data/archive/results/TrailSky_Archive_Data.xlsx
+    python -m archive.export_excel        # → data/archive/results/SummitSathi_Archive_Data.xlsx
 """
 import json
 import sqlite3
@@ -19,7 +19,7 @@ from archive.evaluate import RESULTS_DIR, build_dataset
 from archive.evaluate_v3 import add_cooling_features
 from archive.truth import locations
 
-OUT = RESULTS_DIR / "TrailSky_Archive_Data.xlsx"
+OUT = RESULTS_DIR / "SummitSathi_Archive_Data.xlsx"
 
 FONT = "Arial"
 F_BODY = Font(name=FONT, size=10)
@@ -86,7 +86,7 @@ def main():
     # ── Read Me ───────────────────────────────────────────────
     ws = wb.active
     ws.title = "Read Me"
-    title(ws, "TrailSky archive study — data workbook",
+    title(ws, "SummitSathi archive study — data workbook",
           "Real NOAA-15/18/19 APT satellite passes over India (2018–2025) scored against airport weather reports.")
     readme = [
         ("Sheet", "What it contains"),
